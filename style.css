@@ -83,7 +83,7 @@ nav, nav a {
 
 /* bio */
 .bio {
-	width: 70%;
+	width: 80%;
 	margin: auto;
 	text-align: center;
 	background-color: white;
@@ -101,7 +101,7 @@ nav, nav a {
 
 /* headers */
 .header {
-    width: 35%;
+    width: 500px;
     margin: auto;
     text-align: center;
     background-color: var(--green);
@@ -119,6 +119,7 @@ nav, nav a {
     height: 350px;
     perspective: 1000px;
     margin: 1.5rem 1.5rem 3rem 1.5rem;
+    display: flex;
 }
 
 .flip-card a {
@@ -201,8 +202,10 @@ nav, nav a {
 
 .container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
+    align-content: center;
+  
+    gap: 4px;
+    grid-auto-flow: column;
     margin-bottom: 2rem;
-}
+  }
