@@ -18,14 +18,17 @@
         <li id="title"> <a href = "#nav-bar"> Katherine Li // Portfolio </a></li></h1>
         <li><a href = "#cs-title"> Computer Science </a></li>
         <li><a href = "#imd-title"> Immersive Media Design </a></li>
-        <li><a href = "#about-title"> About </a></li>
+        <li><a href = "#experience-title"> Experience </a></li>
    </nav>
-
-   <div class="bio"> 
-        <!-- name animation here-->
-        <p> <a href = #about-title class="bio-link" id="name"> Hi, I'm Katherine! </a>I'm a sophomore at the University of Maryland pursuing dual-degrees in <a href = #cs-title class="bio-link"> Computer Science </a> and <a href = #imd-title class="bio-link" >Immersive Media Design</a>, currently working as a computational neuroscience research assistant. Scroll to see what I've been working on! </p>
-   </div>
-   <br> <br> <br>
+   <div id="#top-container"> 
+        <div class="bio"> 
+                <!-- name animation here-->
+                <p> <a class="bio-link" id="name"> Hi, I'm Katherine! </a>I'm a sophomore at the University of Maryland pursuing dual-degrees in <a href = #cs-title class="bio-link"> Computer Science </a> and <a href = #imd-title class="bio-link" >Immersive Media Design</a>, currently working as a computational neuroscience research assistant. Scroll to see what I've been working on! 
+                </p>
+        </div>
+        <!-- insert contact info here-->
+    </div>
+   <br>  <br>
 
    <!-- cs projects-->
         <h2 class="header" id="cs-title" > Computer Science Projects </h2>
@@ -35,11 +38,15 @@
                 <div class="flip-card-inner">
                     <div class="flip-card-front" id="cs1"> 
                         <img src="images/test.png"/> 
-                        <h2> title here </h2>
-                        <p> details here</p>
+                        <h2> Spotify Matchmaker </h2>
+                        <p> In-Progress <br>
+                             Python </p>
                     </div>
                     <div class="flip-card-back" >
-                        <p> back text here </p>
+                        <p> <a href = "github.com/kath3rine/spotify-matchmaker" > LINK </a>
+                            <br><br>
+                            Similar to a dating app, but based on music. Used Spotify Web API to scrape, analyze and compare users' Spotify data to determine their compatibility, select artists/categories they both like, and create a “profile”, after which they can opt to match with each other 
+                        </p>
                     </div>
                 </div>
         </div>
@@ -48,11 +55,15 @@
             <div class="flip-card-inner">
                 <div class="flip-card-front" id="cs2"> 
                     <img src="images/test.png"/> 
-                    <h2> title here </h2>
-                    <p> details here</p>
+                    <h2> COVID Data Analysis </h2>
+                    <p> May 2022 <br> 
+                        R </p>
                 </div>
                 <div class="flip-card-back" >
-                    <p> back text here </p>
+                    <p> <a href ="google.com"> LINK </a>
+                        <br><br>
+                        Group-designed research and data analysis project. Parsed and organized a dataset of .csv files to create visualizations that monitor and analyze how temperature and humidity affect the caseload and patterns of COVID-19 in different countries 
+                    </p>
                 </div>
             </div>
         </div>
@@ -60,12 +71,17 @@
         <div class="flip-card"> 
             <div class="flip-card-inner">
                 <div class="flip-card-front" id="cs3"> 
-                    <img src="images/test.png"/> 
-                    <h2> title here </h2>
-                    <p> details here</p>
+                    <img src="images/cs-maze.jpg"/> 
+                    <h2> Maze </h2>
+                    <p> Apr 2022 <br>
+                        Java </p>
                 </div>
                 <div class="flip-card-back" >
-                    <p> back text here </p>
+                    <p> <a href = "youtube.com" > LINK </a>
+                        <br><br>
+                        Implemented a weighted directed node graph to represent and generate a random maze and find the shortest-path solution using depth-first search,
+                        breadth-first search, and Dijkstra’s Algorithm
+                    </p>
                 </div>
             </div>
         </div>
@@ -79,12 +95,16 @@
              <div class="flip-card"> 
                      <div class="flip-card-inner">
                          <div class="flip-card-front" id="imd1"> 
-                             <img src="images/test.png"/> 
-                             <h2> title here </h2>
-                             <p> details here</p>
+                             <img src="images/imd-site.png"/> 
+                             <h2> Art Portfolio Website </h2>
+                             <p> Dec 2022 <br>
+                                HTML/CSS, Javascript </p>
                          </div>
                          <div class="flip-card-back" >
-                             <p> back text here </p>
+                            <p><a href = "kath3rine.github.io/art-portfolio"> LINK </a>
+                            <br><br>
+                              Interactive gallery-style website featuring a portfolio of my favorite artwork 
+                            </p>
                          </div>
                      </div>
              </div>
@@ -92,12 +112,16 @@
              <div class="flip-card"> 
                  <div class="flip-card-inner">
                      <div class="flip-card-front" id="imd2"> 
-                         <img src="images/test.png"/> 
-                         <h2> title here </h2>
-                         <p> details here</p>
+                         <img src="images/imd-escape.png"/> 
+                         <h2> Escape Game </h2>
+                         <p>  Dec 2022 <br>
+                          HTML/CSS, Javascript</p>
                      </div>
                      <div class="flip-card-back" >
-                         <p> back text here </p>
+                    <p>  <a href = "kath3rine.github.io/escape-game"> LINK </a>
+                        <br><br>
+                        Choose-your-own-adventure type game in which the user must escape a haunted house
+                    </p>
                      </div>
                  </div>
              </div>
@@ -105,112 +129,40 @@
              <div class="flip-card"> 
                  <div class="flip-card-inner">
                      <div class="flip-card-front" id="imd3"> 
-                         <img src="images/test.png"/> 
-                         <h2> title here </h2>
-                         <p> details here</p>
+                         <img src="images/imd-fire.jpg"/> 
+                         <h2> VR Simulation </h2>
+                         <p> Nov 2021 <br>
+                            Unity, C# 
+                        </p>
                      </div>
                      <div class="flip-card-back" >
-                         <p> back text here </p>
+                         <p> 
+                            <a href = "youtube.com"> LINK </a>
+                            <br><br>
+                            Collaboratively used Unity to design, illustrate, construct, and animate a stylized VR re-creation of the 1812 Fire of Moscow, allowing the user to experience the event “firsthand” via Oculus headset 
+                        </p>
                      </div>
                  </div>
              </div>
          </div>
         
-         <!-- about section -->
-        <h2 class="header" id="about-title" > About Me </h2>
-        <br>
-        <!--
-        <div class="container"> 
-             <div class="flip-card" id="abt-card-1"> 
-                     <div class="flip-card-inner">
-                         <div class="flip-card-front"> 
-                            <br>
-                             <h2> Contact </h2>
-                         </div>
-                         <div class="flip-card-back" >
-                             <p> back text here </p>
-                         </div>
-                     </div>
-             </div>
-             
-             <div class="flip-card" id="abt-card-2"> 
+         <!-- experience section -->
+        <h2 class="header" id="experience-title" > Experience </h2>
+        <br> <br>
+             <div class="flip-card" id="exp-card"> 
                  <div class="flip-card-inner">
                      <div class="flip-card-front"> 
-                        <br>
-                         <h2> Experience </h2>
+                        <br> <br> <br>
+                         <h2> Research Assistant </h2>
+                         <p> @ University of Maryland Computational Cognitive Neuroscience + Psychiatry Lab
+                            </p>
                      </div>
                      <div class="flip-card-back" >
-                         <p> back text here </p>
+                         <p> 
+                             Computationally modeling information processing in decision making by developing and utilizing machine learning classifiers to analyze EEG data from recognition memory tasks
+                         </p>
                      </div>
                  </div>
              </div>
-             
-             <div class="flip-card" id="abt-card-3"> 
-                 <div class="flip-card-inner">
-                     <div class="flip-card-front""> 
-                        <br>
-                         <h2> Activities </h2>
-                     </div>
-                     <div class="flip-card-back" >
-                         <p> back text here </p>
-                     </div>
-                 </div>
-             </div>
-         </div> -->
-     
-         <table class="thumbnails" cellspacing="15">
-            <tbody>
-              <tr>
-                  <td scope="col">
-                    <div class="flip-card" id="abt-card-3"> 
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front"> 
-                               <br>
-                                <h2> Activities </h2>
-                            </div>
-                            <div class="flip-card-back" >
-                                <p> back text here </p>
-                            </div>
-                        </div>
-                    </div> 
-                    
-                      <br> &nbsp;</td>
-                      <td scope="col">
-                        <div class="flip-card" id="abt-card-3"> 
-                            <div class="flip-card-inner">
-                                <div class="flip-card-front"> 
-                                   <br>
-                                    <h2> Activities </h2>
-                                </div>
-                                <div class="flip-card-back" >
-                                    <p> back text here </p>
-                                </div>
-                            </div>
-                        </div> 
-                          <br> &nbsp;</td>
-      
-                  <td scope="col">
-                    <div class="flip-card" id="abt-card-3"> 
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front"> 
-                               <br>
-                                <h2> Activities </h2>
-                            </div>
-                            <div class="flip-card-back" >
-                                <p> back text here </p>
-                            </div>
-                        </div>
-                    </div>
-                      <br> &nbsp;</td>
-                  
-                  
-              </tr>
-              <tr> 
-                  
-              </tr>
-            </tbody>
-          </table>
-    <br><br>
-
-
+        <br><br>
 </body>

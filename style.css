@@ -3,16 +3,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto');
 
 :root {
-	--margin: 3rem;
-	--padding: 0.75rem;
-	
-	--lt-green: #bcd5b2;
-    --green: #839683;
-    --dk-green: #325532;
+    --lt-green: #bcd5b2;
+    --green: #78a178;
+    --dk-green: #2d542d;
     --tan: #f2ddc1;
     --pink: #f59186;
-    --another-pink: #ffd0d0;
-    --lt-pink: #ffebe4;
+    --another-pink: #fbc0bb;
+    --lt-pink: #fbe5e3;
 
   }
 
@@ -20,22 +17,40 @@ body {
     background-color: var(--lt-green);
 }
 
-* p {
-    font-family: "Roboto", sans-serif;
+* {
+    border-radius: 15px;
 }
 
-* h1, h2, h3 {
+* p {
+    font-family: "Roboto", sans-serif;
+    color: var(--dk-green);
+    line-height: 1.5;
+    margin: 35px;
+}
+
+* a {
+    color: var(--dk-green);
+    text-decoration: none;
+    line-height: 1.5;
+}
+
+* h1, h2 {
     font-family: "Merriweather", sans-serif;
+    line-height: 0.25rem;
+}
+
+* a:hover, #title a:hover, .flip-card-back a:hover, .bio a:hover {
+    color: var(--pink);
 }
 
 #particles-js {
 	width: 100%;
-        height: 1700px;
-        position: absolute;
-        top: 0;
-        left: 0;
-        opacity: 1;
-		z-index: -5;
+    height: 1800px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 1;
+	z-index: -5;
 }
 
   /* nav bar */
@@ -49,7 +64,7 @@ nav {
     justify-content: space-between;
     padding: 1.5rem 3.5rem;
     background-color: var(--green);
-	margin: var(--margin);
+	margin: 2rem;
     font-family: "Merriweather";
     border-radius: 15px;
   }
@@ -57,6 +72,7 @@ nav {
 nav, nav a {
     color: white;
     font-size: 20px;
+    text-decoration: none;
 }
 
 #title, #title a {
@@ -65,32 +81,19 @@ nav, nav a {
     font-size: 20px;
 }
 
-nav a:hover, #title a:hover {
-    color: var(--pink);
-}
-
 /* bio */
 .bio {
 	width: 70%;
 	margin: auto;
 	text-align: center;
 	background-color: white;
-	border: 20px solid white;
+	border: 5px solid white;
     border-radius: 15px;
 }
 
-.bio p, a {
-    color: var(--dk-green);
+.bio a {
+    color: var(--green);
 }
-
-.bio a:hover, #name:hover {
-    color: var(--pink);
-}
-
-.bio-link  {
-    text-decoration: none;
-}
-
 
 #name {
     color: var(--pink)
@@ -105,26 +108,34 @@ nav a:hover, #title a:hover {
     border: 15px solid var(--green);
     border-radius: 25px;
     color: white;
+    align-items: center;
+    padding: 0.5rem;
 }
 
 /* cards */
 .flip-card {
     background-color: transparent;
     width: 300px;
-    height: 320px;
+    height: 350px;
     perspective: 1000px;
-    margin-bottom: 3rem;
+    margin: 1.5rem 1.5rem 3rem 1.5rem;
 }
 
-#abt-card-1, #abt-card-2, #abt-card-3 {
-    height: 150px;
+.flip-card a {
+    color: var(--another-pink);
+}
+
+#exp-card {
+    margin: auto;
+    display: block;
+    height: 250px;
 }
 
 .flip-card-front img {
-    width: 240px;
-    height: 180px;
-    padding: 0.8rem;
-    border-radius: 25px;
+    width: 250px;
+    height: 150px;
+    padding: 1.3rem;
+    border-radius: 30px;
 }
 
 .flip-card-inner {
@@ -149,11 +160,15 @@ nav a:hover, #title a:hover {
     border-radius: 16px;
 }
 
-#cs1, #cs2, #cs3, #imd1, #imd2, #imd3 {
+#cs1, #cs2, #cs3  {
     background-color: var(--lt-pink);
 }
 
-#abt-card-1 .flip-card-front, #abt-card-2 .flip-card-front, #abt-card-3 .flip-card-front {
+#imd1, #imd2, #imd3 {
+    background-color: var(--lt-pink);
+}
+
+#exp-card .flip-card-front {
     background-color: var(--another-pink);
 }
 
@@ -168,23 +183,26 @@ nav a:hover, #title a:hover {
 .flip-card-back {
     background-color: white;
     transform: rotateY(180deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .flip-card-back p {
-    margin: 2rem;
-    color: var(--dk-green);
+    color: var(--green);
 }
+
+.flip-card-back a {
+    text-decoration: underline;
+    color: var(--another-pink);
+}
+
 
 .container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    margin: 1rem;
     justify-items: center;
-}
-
-.thumbnails {
-	width: 90%;
-	margin: auto;
-	text-align: center;
-	background-color: var(--lt-green);
+    justify-content: space-evenly;
+    margin-bottom: 2rem;
 }
