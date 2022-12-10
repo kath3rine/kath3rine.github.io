@@ -3,18 +3,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto');
 
 :root {
-    --normal-font: 400;
-    --bold-font: 700;
-    --bolder-font: 900;
 	--margin: 3rem;
 	--padding: 0.6rem;
 	
 	--lt-green: #bcd5b2;
-    --green: #99a799;
+    --green: #839683;
     --dk-green: #2b412b;
     --tan: #f2ddc1;
     --pink: #e58c7e;
-    --lt-pink: #fddbd2;
+    --lt-pink: #ffcfc1;
+    --rly-lt-pink: #ffe9e3;
 
   }
 
@@ -24,6 +22,10 @@ body {
 
 * p {
     font-family: "Roboto", sans-serif;
+}
+
+* h1, h2, h3 {
+    font-family: "Merriweather", sans-serif;
 }
 
 #particles-js {
@@ -49,28 +51,32 @@ nav {
     background-color: var(--green);
 	margin: var(--margin);
     font-family: "Merriweather";
+    border-radius: 15px;
   }
 
 nav, nav a {
     color: white;
+    font-size: 20px;
 }
 
 #title, #title a {
     color: var(--lt-pink);
-    font-size: var(--bold-font);
     font-weight: bold;
+    font-size: 20px;
 }
 
 nav a:hover, #title a:hover {
     color: var(--pink);
 }
 
+/* bio */
 .bio {
-	width: 76%;
+	width: 70%;
 	margin: auto;
 	text-align: center;
 	background-color: white;
 	border: 20px solid white;
+    border-radius: 15px;
 }
 
 .bio p, a {
@@ -80,3 +86,15 @@ nav a:hover, #title a:hover {
 .bio a:hover {
     color: var(--pink);
 }
+
+/* headers */
+.header {
+    width: 35%;
+    margin: auto;
+    text-align: center;
+    background-color: var(--green);
+    border: 15px solid var(--green);
+    border-radius: 25px;
+    color: white;
+}
+
