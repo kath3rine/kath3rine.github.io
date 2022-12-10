@@ -8,11 +8,10 @@
 	
 	--lt-green: #bcd5b2;
     --green: #839683;
-    --dk-green: #2b412b;
+    --dk-green: #325532;
     --tan: #f2ddc1;
-    --pink: #e58c7e;
-    --lt-pink: #ffcfc1;
-    --rly-lt-pink: #ffe9e3;
+    --pink: #f59186;
+    --lt-pink: #ffddd2;
 
   }
 
@@ -30,7 +29,7 @@ body {
 
 #particles-js {
 	width: 100%;
-        height: 100%;
+        height: 1500px;
         position: absolute;
         top: 0;
         left: 0;
@@ -87,6 +86,14 @@ nav a:hover, #title a:hover {
     color: var(--pink);
 }
 
+.bio-link  {
+    text-decoration: none;
+}
+
+#name {
+    color: var(--pink)
+}
+
 /* headers */
 .header {
     width: 35%;
@@ -98,3 +105,73 @@ nav a:hover, #title a:hover {
     color: white;
 }
 
+/* cards */
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 320px;
+    perspective: 1000px;
+    margin-bottom: 3rem;
+}
+
+#abt-card-1, #abt-card-2, #abt-card-3 {
+    height: 150px;
+}
+
+.flip-card-front img {
+    width: 240px;
+    height: 180px;
+    padding: 0.8rem;
+    border-radius: 25px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 16px;
+    margin-bottom: 1rem;
+}
+
+#cs1, #cs2, #cs3, #imd1, #imd2, #imd3 {
+    background-color: var(--lt-pink);
+}
+
+#abt-card-1 .flip-card-front, #abt-card-2 .flip-card-front, #abt-card-3 .flip-card-front {
+    background-color: var(--tan);
+}
+
+.flip-card-front h2 {
+    color: var(--dk-green);
+}
+
+.flip-card-front p {
+    color: var(--green);
+}
+
+.flip-card-back {
+    background-color: white;
+    transform: rotateY(180deg);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 1rem;
+    justify-items: center;
+}
