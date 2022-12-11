@@ -9,7 +9,7 @@
     --tan: #f2ddc1;
     --pink: #f59186;
     --another-pink: #fbc0bb;
-    --lt-pink: #fbe5e3;
+    --lt-pink: #fbe8e3;
 
   }
 
@@ -83,7 +83,7 @@ nav, nav a {
 
 /* bio */
 .bio {
-	width: 80%;
+	max-width: 1000px;
 	margin: auto;
 	text-align: center;
 	background-color: white;
@@ -205,7 +205,7 @@ nav, nav a {
     justify-content: center;
     align-content: center;
   
-    gap: 4px;
+    gap: 6px;
     grid-auto-flow: column;
     margin-bottom: 2rem;
   }
