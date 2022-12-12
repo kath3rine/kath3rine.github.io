@@ -4,11 +4,11 @@
 
 :root {
     --lt-green: #bcd5b2;
-    --green: #78a178;
+    --green: #78ab78;
     --dk-green: #2d542d;
     --tan: #f2ddc1;
-    --pink: #f59186;
-    --another-pink: #fbc0bb;
+    --pink: #e76f6d;
+    --another-pink: #f9b1ab;
     --lt-pink: #fbe8e3;
 
   }
@@ -21,7 +21,7 @@ body {
     border-radius: 15px;
 }
 
-* p {
+* p, .contact-info {
     font-family: "Roboto", sans-serif;
     color: var(--dk-green);
     line-height: 1.5;
@@ -45,7 +45,7 @@ body {
 
 #particles-js {
 	width: 100%;
-    height: 1800px;
+    height: 300%;
     position: absolute;
     top: 0;
     left: 0;
@@ -81,7 +81,7 @@ nav, nav a {
     font-size: 20px;
 }
 
-/* bio */
+/* bio + contact body */
 .bio {
 	max-width: 1000px;
 	margin: auto;
@@ -95,13 +95,9 @@ nav, nav a {
     color: var(--green);
 }
 
-#name {
-    color: var(--pink)
-}
-
 /* headers */
 .header {
-    width: 500px;
+    width: 450px;
     margin: auto;
     text-align: center;
     background-color: var(--green);
@@ -118,7 +114,7 @@ nav, nav a {
     width: 300px;
     height: 350px;
     perspective: 1000px;
-    margin: 1.5rem 1.5rem 3rem 1.5rem;
+    margin: 1.5rem 1.5rem 5rem 1.5rem;
     display: flex;
 }
 
@@ -126,8 +122,9 @@ nav, nav a {
     color: var(--another-pink);
 }
 
-#exp-card {
+.experience .flip-card {
     margin: auto;
+    margin-bottom: 3rem;
     display: block;
     height: 250px;
 }
@@ -161,15 +158,12 @@ nav, nav a {
     border-radius: 16px;
 }
 
-#cs1, #cs2, #cs3  {
+
+.cs .flip-card-front, .imd .flip-card-front {
     background-color: var(--lt-pink);
 }
 
-#imd1, #imd2, #imd3 {
-    background-color: var(--lt-pink);
-}
-
-#exp-card .flip-card-front {
+.experience .flip-card-front {
     background-color: var(--another-pink);
 }
 
@@ -204,8 +198,22 @@ nav, nav a {
     display: grid;
     justify-content: center;
     align-content: center;
-  
-    gap: 6px;
     grid-auto-flow: column;
-    margin-bottom: 2rem;
   }
+
+  /* contact */
+  .contact-info {
+	width: 125px;
+	margin: 1.25rem;
+    margin-bottom: 2rem;
+	text-align: center;
+	background-color: white;
+	border: 5px solid white;
+    border-radius: 15px;
+}
+
+.contact-info:hover {
+    background-color: var(--lt-pink);
+    border-color: var(--lt-pink);
+}
+
