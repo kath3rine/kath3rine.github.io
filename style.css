@@ -3,13 +3,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto');
 
 :root {
-    --lt-green: #bcd5b2;
+    --lt-green: #c3e2c7;
     --green: #78ab78;
     --dk-green: #2d542d;
     --tan: #f2ddc1;
-    --pink: #e76f6d;
-    --another-pink: #f9b1ab;
-    --lt-pink: #fbe8e3;
+    --pink: #7b46bb;
+    --another-pink: #e3b9fd;
+    --lt-pink: #efe5f9;
 
   }
 
@@ -45,7 +45,7 @@ body {
 
 #particles-js {
 	width: 100%;
-    height: 300%;
+    height: 280%;
     position: absolute;
     top: 0;
     left: 0;
@@ -87,7 +87,7 @@ nav, nav a {
 	margin: auto;
 	text-align: center;
 	background-color: white;
-	border: 5px solid white;
+	border: 2px solid white;
     border-radius: 15px;
 }
 
