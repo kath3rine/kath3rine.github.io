@@ -7,9 +7,9 @@
     --green: #78ab78;
     --dk-green: #2d542d;
     --tan: #f2ddc1;
-    --pink: #7b46bb;
-    --another-pink: #e3b9fd;
-    --lt-pink: #efe5f9;
+    --pink: #7f4ca9;
+    --another-pink: #cd9bed;
+    --lt-pink: #eaddf7;
 
   }
 
@@ -21,7 +21,7 @@ body {
     border-radius: 15px;
 }
 
-* p, .contact-info {
+* p {
     font-family: "Roboto", sans-serif;
     color: var(--dk-green);
     line-height: 1.5;
@@ -36,12 +36,12 @@ body {
 
 * h1, h2 {
     font-family: "Merriweather", sans-serif;
-    line-height: 0.25rem;
 }
 
-* a:hover, #title a:hover, .flip-card-back a:hover, .bio a:hover {
+.flip-card-back a:hover, .bio a:hover {
     color: var(--pink);
 }
+
 
 #particles-js {
 	width: 100%;
@@ -53,35 +53,58 @@ body {
 	z-index: -5;
 }
 
-  /* nav bar */
+/* nav bar + contact */
 nav {
-    top: 0;
-    left: 0;
     z-index: 1;
 	height: 30px;
-    display: flex;
+    top: 8%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     align-items: center;
-    justify-content: space-between;
-    padding: 1.5rem 3.5rem;
+    justify-content: space-around;
+    padding: 1rem;
     background-color: var(--green);
-	margin: 2rem;
-    font-family: "Merriweather";
     border-radius: 15px;
+    width: 80%;
+    max-width: 980px;
+    position: fixed;
   }
 
-nav, nav a {
+nav a, .contact a {
+	text-align: center;
+	border: 10px solid;
+    border-radius: 15px;
+    margin: 1rem;
+    
+}
+
+nav a {
+    font-family: "Merriweather", sans-serif;
+    background-color: var(--green);
+    border-color: var(--green);
     color: white;
-    font-size: 20px;
-    text-decoration: none;
 }
 
-#title, #title a {
-    color: var(--another-pink);
-    font-weight: bold;
-    font-size: 20px;
+nav a:hover, .contact a:hover, #title:hover {
+    background-color: var(--another-pink);
+    border-color: var(--another-pink);
 }
 
-/* bio + contact body */
+.contact a {
+	width: 115px;
+    margin-bottom: 2rem;
+    font-family: "Roboto", sans-serif;
+    background-color: white;
+    border-color: white;
+}
+
+#title {
+    background-color: var(--lt-pink);
+    border-color: var(--lt-pink);
+    color:#2d542d;
+}
+
+/* bio */
 .bio {
 	max-width: 1000px;
 	margin: auto;
@@ -105,7 +128,7 @@ nav, nav a {
     border-radius: 25px;
     color: white;
     align-items: center;
-    padding: 0.5rem;
+    padding: 0.25rem;
 }
 
 /* cards */
@@ -126,7 +149,6 @@ nav, nav a {
     margin: auto;
     margin-bottom: 3rem;
     display: block;
-    height: 250px;
 }
 
 .flip-card-front img {
@@ -158,6 +180,9 @@ nav, nav a {
     border-radius: 16px;
 }
 
+.experience .flip-card {
+    height: 250px;
+}
 
 .cs .flip-card-front, .imd .flip-card-front {
     background-color: var(--lt-pink);
@@ -173,6 +198,10 @@ nav, nav a {
 
 .flip-card-front p {
     color: var(--green);
+}
+
+.experience .flip-card-front p {
+    color: white;
 }
 
 .flip-card-back {
@@ -193,27 +222,10 @@ nav, nav a {
     color: var(--another-pink);
 }
 
-
 .container {
     display: grid;
     justify-content: center;
     align-content: center;
     grid-auto-flow: column;
   }
-
-  /* contact */
-  .contact-info {
-	width: 125px;
-	margin: 1.25rem;
-    margin-bottom: 2rem;
-	text-align: center;
-	background-color: white;
-	border: 5px solid white;
-    border-radius: 15px;
-}
-
-.contact-info:hover {
-    background-color: var(--lt-pink);
-    border-color: var(--lt-pink);
-}
 
