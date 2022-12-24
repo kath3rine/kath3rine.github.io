@@ -25,13 +25,12 @@ body {
     font-family: "Roboto", sans-serif;
     color: var(--dk-green);
     line-height: 1.5;
-    margin: 35px;
 }
 
 * a {
-    color: var(--dk-green);
+    color: var(--another-pink);
     text-decoration: none;
-    line-height: 1.5;
+    line-height: 2;
 }
 
 * h1, h2 {
@@ -56,12 +55,11 @@ body {
 /* nav bar + contact */
 nav {
     z-index: 1;
-	height: 30px;
     top: 8%;
     left: 50%;
     transform: translate(-50%, -50%);
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 1rem;
     background-color: var(--green);
     border-radius: 15px;
@@ -86,21 +84,23 @@ nav a {
 }
 
 nav a:hover, .contact a:hover, #title:hover {
-    background-color: var(--another-pink);
-    border-color: var(--another-pink);
+    background-color: var(--lt-pink);
+    border-color: var(--lt-pink);
 }
 
 .contact a {
-	width: 115px;
-    margin-bottom: 2rem;
+	width: 100px;
+    margin: 2rem;
     font-family: "Roboto", sans-serif;
     background-color: white;
     border-color: white;
+    color: var(--dk-green);
 }
 
+
 #title {
-    background-color: var(--lt-pink);
-    border-color: var(--lt-pink);
+    background-color: var(--another-pink);
+    border-color: var(--another-pink);
     color:#2d542d;
 }
 
@@ -108,14 +108,14 @@ nav a:hover, .contact a:hover, #title:hover {
 .bio {
 	max-width: 1000px;
 	margin: auto;
+    display: block;
 	text-align: center;
 	background-color: white;
-	border: 2px solid white;
-    border-radius: 15px;
+    padding: 1px;
 }
 
-.bio a {
-    color: var(--green);
+.bio p {
+    margin: 20px;
 }
 
 /* headers */
@@ -137,12 +137,16 @@ nav a:hover, .contact a:hover, #title:hover {
     width: 300px;
     height: 350px;
     perspective: 1000px;
-    margin: 1.5rem 1.5rem 5rem 1.5rem;
+    margin: 2rem 2rem 5rem 2rem;
     display: flex;
 }
 
 .flip-card a {
     color: var(--another-pink);
+}
+
+.flip-card p {
+    margin: 30px;
 }
 
 .experience .flip-card {
@@ -219,7 +223,6 @@ nav a:hover, .contact a:hover, #title:hover {
 
 .flip-card-back a {
     text-decoration: underline;
-    color: var(--another-pink);
 }
 
 .container {
