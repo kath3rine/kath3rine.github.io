@@ -30,7 +30,7 @@ body {
 * a {
     color: var(--another-pink);
     text-decoration: none;
-    line-height: 2;
+    line-height: 1.5;
 }
 
 * h1, h2 {
@@ -59,7 +59,7 @@ nav {
     left: 50%;
     transform: translate(-50%, -50%);
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 1rem;
     background-color: var(--green);
     border-radius: 15px;
@@ -157,8 +157,8 @@ nav a:hover, .contact a:hover, #title:hover {
 
 .flip-card-front img {
     width: 250px;
-    height: 150px;
-    padding: 1.3rem;
+    height: 180px;
+    padding: 1rem;
     border-radius: 30px;
 }
 
@@ -185,7 +185,7 @@ nav a:hover, .contact a:hover, #title:hover {
 }
 
 .experience .flip-card {
-    height: 250px;
+    height: 225px;
 }
 
 .cs .flip-card-front, .imd .flip-card-front {
