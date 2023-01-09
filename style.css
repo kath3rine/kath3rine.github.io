@@ -1,165 +1,215 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?family=Merriweather');
-@import url('https://fonts.googleapis.com/css2?family=Roboto');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap');
 
 :root {
-    --lt-green: #c3e2c7;
-    --green: #78ab78;
-    --dk-green: #2d542d;
-    --tan: #f2ddc1;
-    --pink: #7f4ca9;
-    --another-pink: #cd9bed;
-    --lt-pink: #eaddf7;
-
-  }
+    --col1: #a3e8e5;
+    --col2: #c3c9f3;
+    --col3: #B9BBDF;
+    --col4: #878ECD;
+    --col5: #5c64b1;
+}
 
 body {
-    background-color: var(--lt-green);
-}
-
-* {
-    border-radius: 15px;
-}
-
-* p {
-    font-family: "Roboto", sans-serif;
-    color: var(--dk-green);
-    line-height: 1.5;
-}
-
-* a {
-    color: var(--another-pink);
-    text-decoration: none;
-    line-height: 1.5;
-}
-
-* h1, h2 {
-    font-family: "Merriweather", sans-serif;
-}
-
-.flip-card-back a:hover, .bio a:hover {
-    color: var(--pink);
+    background-color: var(--col5);
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
 }
 
 
 #particles-js {
 	width: 100%;
-    height: 280%;
+    height: 100%;
     position: absolute;
     top: 0;
     left: 0;
-    opacity: 1;
+    opacity: 0.8;
 	z-index: -5;
 }
 
-/* nav bar + contact */
-nav {
-    z-index: 1;
-    top: 8%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    align-items: center;
-    justify-content: space-around;
-    padding: 1rem;
-    background-color: var(--green);
-    border-radius: 15px;
-    width: 80%;
-    max-width: 980px;
+/* HOME */
+.home {
+    width: 80vw;
+    height: 100vh;
+    top: 1vh;
+    margin-left: 10vw;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: 700;
+ }
+
+.home h1 {
+    color: white;
+    font-size: 10vh;
+}
+
+.home h2 {
+    color: var(--col1);
+    font-size: 4vh;
+}
+
+.home p {
+    color: var(--col2);
+}
+
+#project-link {
+    color: var(--col2);
+    border: var(--col2) solid 5px;
+    padding: 0.75rem;
+    width: 20vw;
+    text-align: center;
+    text-decoration: none;
+}
+
+#project-link:hover {
+    color: var(--col1);
+    border-color: var(--col1);
+}
+
+/* NAV */
+.navbar {
+    top: 0vh;
     position: fixed;
+    padding: 10px;
+    background-color: var(--col5);
+    width: 100vw;
+    z-index: 4;
+}
+
+
+.navbar a {
+    color: var(--col2);
+    text-decoration: none;
+    padding: 20px;
+    font-weight: 700;
+}
+
+.navbar a:hover, #home-button:hover {
+    color: var(--col1);
+}
+
+#home-button {
+    color: white;
+}
+
+/* SECTIONS */
+.section {
+    background-color: var(--col5);
+    border: solid var(--col4) 3px;
+    width: 80vw;
+    top: 1vh;
+    margin: 10vw 10vw 2vw 10vw;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+}
+
+.section-title {
+    background-color: white;
+    color: var(--col5);
+    border-radius: 10px 10px 0px 0px;
+    font-weight: 700;
+    font-size: 3.5vh;
+    text-align: center;
+    padding: 3px;
+}
+
+.section-text {
+    margin: 1.5vw;
+    color: var(--col2);
+    font-family: "Inconsolata", monospace;
+    font-weight: 500;
+    font-size: 2.5vh;
+}
+
+
+/* EXPERINCE 
+.experience-sidebar {
+    width: 30%;
+}
+
+.experience-sidebar li {
+    color: var(--col2);
+    font-weight: 700;
+}
+
+.experience-sidebar li:hover {
+    color: var(--col1);
+}
+
+.vl {
+border-left: 2px solid var(--col2);
+  position: relative;
+  left: 30%;
+  margin: 4vh;
+  top: 0;
+}
+
+.experience-sidebar, .experience-description {
+    margin: 3vw;
+}
+
+#role, #company {
+    font-weight: 700;
+    font-size: 3vh;
+}
+
+#role {
+    color: white;
+}
+
+#company {
+    color: var(--col1);
+}
+
+ #date {
+    color: var(--col2);
+}
+
+#description {
+    font-family: "Inconsolata", monospace;
+    color: var(--col2);
+    font-size: 2.5vh;
+}
+*/
+
+/* CARDS */
+.container {
+    display: grid;
+    justify-self: center;
+    justify-content: space-evenly;
+    width: 100%;
+    align-content: center;
+    grid-auto-flow: column;
   }
 
-nav a, .contact a {
-	text-align: center;
-	border: 10px solid;
-    border-radius: 15px;
-    margin: 1rem;
-    
-}
 
-nav a {
-    font-family: "Merriweather", sans-serif;
-    background-color: var(--green);
-    border-color: var(--green);
-    color: white;
-}
-
-nav a:hover, .contact a:hover, #title:hover {
-    background-color: var(--lt-pink);
-    border-color: var(--lt-pink);
-}
-
-.contact a {
-	width: 100px;
-    margin: 2rem;
-    font-family: "Roboto", sans-serif;
-    background-color: white;
-    border-color: white;
-    color: var(--dk-green);
-}
-
-
-#title {
-    background-color: var(--another-pink);
-    border-color: var(--another-pink);
-    color:#2d542d;
-}
-
-/* bio */
-.bio {
-	max-width: 1000px;
-	margin: auto;
-    display: block;
-	text-align: center;
-	background-color: white;
-    padding: 1px;
-}
-
-.bio p {
-    margin: 20px;
-}
-
-/* headers */
-.header {
-    width: 450px;
-    margin: auto;
-    text-align: center;
-    background-color: var(--green);
-    border: 15px solid var(--green);
-    border-radius: 25px;
-    color: white;
-    align-items: center;
-    padding: 0.25rem;
-}
-
-/* cards */
-.flip-card {
+  .flip-card {
     background-color: transparent;
-    width: 300px;
-    height: 350px;
+    width: 270px;
+    height: 375px;
     perspective: 1000px;
-    margin: 1.5rem 1.5rem 3rem 1.5rem;
+    margin: 20px;
+    
     display: flex;
 }
 
-.flip-card a {
-    color: var(--another-pink);
+#experience .flip-card {
+    width: 425px;
+    height: 225px;
 }
 
-.flip-card p {
+#experience .front-text {
     margin: 30px;
 }
 
-.experience .flip-card {
-    margin: auto;
-    margin-bottom: 3rem;
-    display: block;
-}
-
 .flip-card-front img {
-    width: 250px;
-    height: 180px;
-    padding: 1rem;
-    border-radius: 30px;
+    width: 225px;
+    height: 150px;
+    border-radius: 10px;
 }
 
 .flip-card-inner {
@@ -184,50 +234,74 @@ nav a:hover, .contact a:hover, #title:hover {
     border-radius: 16px;
 }
 
-.experience .flip-card {
-    height: 225px;
-}
-
-.cs .flip-card-front, .imd .flip-card-front {
-    background-color: var(--lt-pink);
-}
-
-.experience .flip-card-front {
-    background-color: var(--another-pink);
-}
-
-.flip-card-front h2 {
-    color: var(--dk-green);
-}
-
-.flip-card-front p {
-    color: var(--green);
-}
-
-.experience .flip-card-front p {
-    color: white;
+.flip-card-front {
+    background-color: var(--col4);
+    border: var(--col5) solid 2px;
+    border-radius: 15px;
 }
 
 .flip-card-back {
-    background-color: white;
+    background-color: var(--col2);
     transform: rotateY(180deg);
     display: flex;
     justify-content: center;
-    align-items: center;
-    text-align: center;
+    text-align: left;
+}
+
+.front-text {
+    margin: 2vw;
 }
 
 .flip-card-back p {
-    color: var(--green);
+    margin: 3vw;
+}
+
+/* CARD TEXT */
+.flip-card-front h2 {
+    color: white;
+}
+
+.flip-card-front h3 {
+    color: var(--col1);
+}
+
+.flip-card-front p {
+    color: var(--col2);
+}
+
+.flip-card-back p {
+    font-family: "Inconsolata", monospace;
+    font-weight: 500;
+    line-height: 1.3;
+    color: var(--col5);
 }
 
 .flip-card-back a {
-    text-decoration: underline;
+    color: var(--col4);
 }
 
-.container {
-    display: grid;
-    justify-content: center;
-    align-content: center;
-    grid-auto-flow: column;
-  }
+#cs-projects .flip-card-front p {
+    color: var(--col1);
+}
+
+.flip-card a:hover {
+    color: var(--col1);
+}
+
+/* CONTACT */
+.contact {
+    position: fixed;
+    top: 75vh;
+    right: 2vw;
+}
+
+.contact img {
+    filter: invert(100%);
+    opacity: 0.6;
+    height: 35px;
+    width: 35px;
+}
+
+.contact img:hover {
+    opacity: 1;
+}
