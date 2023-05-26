@@ -34,24 +34,7 @@ function Projects() {
             desc: "Tinder clone that allows the user to search for an artist on Spotify, and displays the artist’s picture, top tracks, and genres in an interface mimicking a Tinder profile",
             desc2: "User can listen to the artist’s music, swipe left/right, and view the artists they’ve matched with",
             link: "https://drive.google.com/file/d/1hGeIWM9iMilR8cUmyy6yzr8JWEa7DPCK/view?usp=sharing"
-        },
-        {
-            id: "p4",
-            img: Maze,
-            title: "Maze",
-            tech: "Java",
-            desc: "Implemented a weighted directed node graph to represent and generate a random maze",
-            desc2: "Found the shortest-path solution using depth-first search, breadth-first search, and Dijkstra’s Algorithm",
-            link: "https://www.youtube.com/watch?v=Fz5lo_c3MmQ"
-        }, 
-        {
-            id: "p5",
-            img: Escape,
-            title: "Escape Game",
-            tech: "HTML/CSS, JavaScript, Procreate",
-            desc: "Collaboratively illustrated and programmed a pastel-themed choose-your-own-adventure game in which the player must escape a haunted house",
-            link: "httpe://kath3rine.github.io/escape-game"
-        }
+        } 
     ]
   return (
     <div className="Projects" id="projects">

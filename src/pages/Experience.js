@@ -13,7 +13,8 @@ function Experience() {
             role: "Research Intern",
             company: "@ US Army Research Lab",
             date: "May 2023 - Present",
-            desc: "Researching hybrid networks and effects of external perturbations on neuronal structure-function response"
+            desc: "Neuromorphic Computing Group",
+            desc2: "Researching hybrid networks and effects of external perturbations on neuronal structure-function response"
         },
         {
             id: "e2",
