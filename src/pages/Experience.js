@@ -1,14 +1,15 @@
 import '../App.scss';
-
 import ExpCard from '../components/ExpCard.js';
-import Test from '../images/test.png';
+import ARL from '../images/arl.png';
+import Tamid from '../images/tamid.png';
+import UMD from '../images/umd.png';
 
 function Experience() {
 
     const cards = [
         {
             id: "e1",
-            img: Test,
+            img: ARL,
             role: "Research Intern",
             company: "@ US Army Research Lab",
             date: "May 2023 - Present",
@@ -16,7 +17,7 @@ function Experience() {
         },
         {
             id: "e2",
-            img: Test,
+            img: Tamid,
             role: "Tech Consultant",
             company: "@ TAMID at Maryland",
             date: "Mar 2023 - Present",
@@ -24,7 +25,7 @@ function Experience() {
         },
         {
             id: "e3",
-            img: Test,
+            img: UMD,
             role: "Research Assistant",
             company: "@ UMD Computational Cognitive Neuroscience & Psychiatry Lab",
             date: "Aug 2022 - Dec 2022",
@@ -37,7 +38,7 @@ function Experience() {
         <div className="Experience" id="experience">
             <div className="section">
                 <span> experience.py </span>
-                <p> print("click on the card for more info")</p>
+                <p> print("click on each card for more info")</p>
                 <div className="container">
                 {cards.map((card) => (
                     <ExpCard key={card.id} card={card} />
