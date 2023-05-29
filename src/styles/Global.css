@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap');
+
+:root {
+  --col1: #a3e8e5;
+  --col2: #c3c9f3;
+  --col4: #878ECD;
+  --col5: #5c64b1;
+  --col6: #454ea2;
+}
+
+body {
+    background-color: var(--col5);
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+  }

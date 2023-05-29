@@ -1,4 +1,4 @@
-import '../App.scss';
+import '../styles/Section.scss';
 import ExpCard from '../components/ExpCard.js';
 import ARL from '../images/arl.png';
 import Tamid from '../images/tamid.png';

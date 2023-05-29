@@ -1,8 +1,7 @@
-import Home from './pages/Home.js';
-import About from './pages/About.js'
+import Home from './pages/Home.js'
 import Experience from './pages/Experience.js'
 import Projects from './pages/Projects.js'
-import './App.scss';
+import Contact from './components/Contact.js'
 
 function App() {
   return (
@@ -11,6 +10,7 @@ function App() {
       {/* <About /> */}
       <Experience />
       <Projects />
+      <Contact />
     </div>
   );
 }

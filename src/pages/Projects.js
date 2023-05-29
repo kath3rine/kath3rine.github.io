@@ -1,4 +1,4 @@
-import '../App.scss';
+import '../styles/Section.scss';
 import ProjCard from '../components/ProjCard.js';
 import Matchmaker from '../images/matchmaker.png';
 import Fractal from '../images/fractal.png';
