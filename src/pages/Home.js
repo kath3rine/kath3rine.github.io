@@ -1,6 +1,6 @@
 import '../styles/Home.css';
 import Test from '../images/test.png';
-
+import Contact from '../components/Contact.js'
 
 function Home() {
   return (
@@ -14,11 +14,12 @@ function Home() {
                 <a href="#experience">Experience</a>
                 <a href="#projects">Projects</a>
             </div>
+            <Contact />
         </div>
 
-        <div className="home-section" id="home-img">
+        {/*<div className="home-section" id="home-img">
             <img src={Test}/>
-        </div>
+  </div>*/}
         
     </div>
   );
