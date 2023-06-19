@@ -10,11 +10,11 @@ function Experience() {
         {
             id: "e1",
             img: ARL,
-            role: "Research Intern",
+            role: "Neuromorphic Computing Research Intern",
             company: "@ US Army Research Lab",
             date: "May 2023 - Present",
-            desc: "Neuromorphic Computing Group",
-            desc2: "Researching hybrid networks and effects of external perturbations on neuronal structure-function response"
+            desc: "Advancing synthetic biological intelligence/biomimetic technology by understanding and controlling excitable networks of living systems",
+            desc2: "Using photostimulation, fluorescence microscopy/calcium imaging, reservoir computing, and more to perturb and model relationships between biological and artificial neural networks"
         },
         {
             id: "e2",
@@ -31,7 +31,7 @@ function Experience() {
             company: "@ UMD Computational Cognitive Neuroscience & Psychiatry Lab",
             date: "Aug 2022 - Dec 2022",
             desc: "Analyzed EEG data from recognition memory tasks and computationally model information processing in learning, decision making, and episodic memory.",
-            desc2: "Prepared data for analysis and used Python  to develop and implement various machine learning classifiers"
+            desc2: "Used Python to preprocess data and implement various machine learning classifiers, achieving ~80% accuracy in predicting subjects’ response"
         }
     ]
 

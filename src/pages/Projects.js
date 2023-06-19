@@ -35,15 +35,6 @@ function Projects() {
             desc: "Tinder clone that allows the user to search for an artist on Spotify, and displays the artist’s picture, top tracks, and genres in an interface mimicking a Tinder profile",
             desc2: "User can listen to the artist’s music, swipe left/right, and view the artists they’ve matched with",
             link: "https://drive.google.com/file/d/1hGeIWM9iMilR8cUmyy6yzr8JWEa7DPCK/view?usp=sharing"
-        },
-        {
-            id: 4,
-            img: Portfolio,
-            title: "Portfolio Website",
-            tech: "React",
-            desc: "This website!",
-            desc2: "Responsive, animated website created from scratch using HTML, CSS/SCSS, and JavaScript",
-            link: "github.com/kath3rine/kath3rine.github.io"
         }
     ]
   return (
