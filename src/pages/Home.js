@@ -13,7 +13,13 @@ function Home() {
             <div className="buttons">
                 <a href="#experience">Experience</a>
                 <a href="#projects">Projects</a>
+                
             </div>
+            {/*
+            <div class="hehe">
+              <img class="haha" src={Katherine}/>
+  </div> */}
+            
             <Contact />
         </div>
 
