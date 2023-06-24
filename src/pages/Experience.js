@@ -13,8 +13,8 @@ function Experience() {
             role: "Neuromorphic Computing Research Intern",
             company: "@ US Army Research Lab",
             date: "May 2023 - Present",
-            desc: "Advancing synthetic biological intelligence/biomimetic technology by understanding and controlling excitable networks of living systems",
-            desc2: "Using photostimulation, fluorescence microscopy/calcium imaging, reservoir computing, and more to perturb and model relationships between biological and artificial neural networks"
+            desc: "Investigate relationships between living and artificial neural networks to increase efficacy for bio-inspired technology",
+            desc2: "Perturb neurons using optogentics and monitor communication via calcium imaging/fluorescence microscopy, then model and maximize network performance with reservoir computing and hyperparameter optimization"
         },
         {
             id: "e2",
@@ -22,7 +22,7 @@ function Experience() {
             role: "Tech Consultant",
             company: "@ TAMID at Maryland",
             date: "Mar 2023 - Present",
-            desc: "Selected as a member of a competitive business club to apply data analytics and software development skills to advise tech startups."
+            desc: "Software development/data analysis for tech startups."
         },
         {
             id: "e3",
