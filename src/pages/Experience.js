@@ -14,7 +14,8 @@ function Experience() {
             company: "@ US Army Research Lab",
             date: "May 2023 - Present",
             desc: "Investigate relationships between living and artificial neural networks to increase efficacy for bio-inspired technology",
-            desc2: "Perturb neurons using optogentics and monitor communication via calcium imaging/fluorescence microscopy, then model and maximize network performance with reservoir computing and hyperparameter optimization"
+            desc2: "Perturb neurons using optogentics and monitor communication via calcium imaging/fluorescence microscopy",
+            desc3: "Model and maximize network performance with reservoir computing and hyperparameter optimization"
         },
         {
             id: "e2",

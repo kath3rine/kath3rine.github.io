@@ -40,6 +40,10 @@
       visibility: hidden;
     }
 }
+
+.mobile-img {
+  visibility: hidden;
+}
     
   
     .Home h1 {
@@ -116,26 +120,16 @@
             left: 0vw;
         }
 
-        #home-img {
-            width: 90%;
-            height: 30%;
+        .mobile-img {
+          visibility: visible;
+          border: white solid 5px;
+          height: 40vh;
         }
-        
-        #home-text {
-            width: 100%;
-            height: 50%;
+
+        .mobile-img img {
+          width: 80%;
+          margin: auto;
+          border: red solid 2px;
         }
     }
 
-    .hehe {
-      height: 20%;
-      top: 0%;
-      border: red solid 2px;
-    }
-
-    .haha {
-      height: 10vh;
-      width: 10vh;
-      border-radius: 30%;
-      margin: 5%;
-    }
