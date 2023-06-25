@@ -1,9 +1,5 @@
 import '../styles/Home.css';
 import Katherine from '../images/katherine.png';
-import Test from '../images/maze.jpg';
-import Email from '../images/email.png';
-import Linkedin from '../images/linkedin.png';
-import Github from '../images/github.png';
 
 function Home() {
   return (
@@ -16,12 +12,14 @@ function Home() {
             <div className="buttons">
                 <a className="button-link" href="#experience">Experience</a>
                 <a className="button-link" href="#projects">Projects</a>
-            </div>
-            
-            
-            <div className="katherine-img">
+                <a className="button-link" href="#contact">Contact</a>
+                <div className="katherine-img">
               <img src={Katherine}/>
             </div>
+            </div>
+            
+            
+            
         </div>
 
         

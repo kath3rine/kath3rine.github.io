@@ -22,6 +22,7 @@ function ExpCard({card}) {
           <div className="card back">
             <p> {card.desc} </p>
             <p> {card.desc2} </p>
+            <p> {card.desc3}</p>
           </div>
         </div>
       </div>

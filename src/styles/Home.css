@@ -22,7 +22,7 @@
     .Home h2 {
       color: white;
       font-size: 3vh;
-      animation: slide-in2 4s;
+      animation: slide-in 2s;
       margin-bottom: 7%;
     }
   
@@ -38,7 +38,7 @@
 
 .button-link {
     color: var(--col2);
-    border: var(--col2) solid 3px;
+    border: var(--col2) solid 2px;
     width: 40%;
     text-align: center;
     text-decoration: none;
@@ -84,11 +84,19 @@
     /* MOBILE */
     @media only screen and (max-width: 1000px) {
         .Home h1 {
-          font-size: 7vh;
+          font-size: 5vh;
+        }
+
+        .Home h2 {
+          font-size: 2vh;
         }
 
         .katherine-img img {
           top: -40%;
+        }
+
+        .button-link {
+          padding: 1% 3% 1% 3%;
         }
     }
 

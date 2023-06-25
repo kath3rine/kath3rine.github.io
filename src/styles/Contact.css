@@ -1,14 +1,14 @@
 .Contact {
-    margin-top: 5%;
-    width: 40%;
+    margin: 2% 40% 2% 40%;
+    width: 20%;
 }
     .Contact img {
       filter: invert(100%);
       opacity: 0.4;
-      height: 3vw;
-      width: 3vw;
+      height: 15%;
+      width: 15%;
       border-radius: 50%;
-      margin: 10% 5% 5% 0%;
+      margin: 8%;
     }
 
     .Contact img:hover {
