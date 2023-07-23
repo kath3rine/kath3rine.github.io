@@ -20,9 +20,9 @@ function ExpCard({card}) {
             <p className="exp-date"> {card.date} </p>
           </div>
           <div className="card back">
-            <p> {card.desc} </p>
-            <p> {card.desc2} </p>
-            <p> {card.desc3}</p>
+              {card.desc.map((d) => (
+                <p>{d}</p>
+              ))}
           </div>
         </div>
       </div>

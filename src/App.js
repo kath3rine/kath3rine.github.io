@@ -1,7 +1,6 @@
-import Home from './pages/Home.js'
-import Experience from './pages/Experience.js'
-import Projects from './pages/Projects.js'
-import Contact from './components/Contact.js'
+import Home from './components/Home.js'
+import Experience from './components/Experience.js'
+import Projects from './components/Projects.js'
 
 function App() {
   return (
@@ -9,7 +8,7 @@ function App() {
       <Home />
       <Experience />
       <Projects />
-      <Contact />
+      
     </div>
   );
 }

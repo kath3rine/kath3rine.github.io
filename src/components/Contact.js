@@ -7,7 +7,7 @@ function Contact() {
     return(
         <div className="Contact" id="contact">
             <a href="mailto:kli17@terpmail.umd.edu"><img src={Email}/></a>
-            <a href="https:/linkedin.com/in/kli17"><img src={Linkedin}/></a>
+            <a href="https://linkedin.com/in/kli17"><img src={Linkedin}/></a>
             <a href="https://github.com/kath3rine"><img src={Github}/></a>
         </div>
     );

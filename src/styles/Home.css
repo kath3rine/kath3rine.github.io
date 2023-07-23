@@ -39,30 +39,22 @@
 .button-link {
     color: var(--col2);
     border: var(--col2) solid 2px;
-    width: 40%;
+    width: 30%;
     text-align: center;
     text-decoration: none;
-    padding: 1% 7% 1% 7%;
+    padding: 1% 5% 1% 5%;
     margin: 2% 5% 2% 0%;
 }
     
     .button-link:hover {
-      color: white;
-      border-color: white;
+      color: var(--col1);
+      border-color: var(--col1);
+    }
+  
+    #contact-button {
+      border: var(--col1) solid 2px;
     }
 
-  .katherine-img {
-    margin: 5% 5% 0% 0%;
-    height: 40vh;
-    position: relative;
-  }
-  
-  .katherine-img img {
-    height: 200%;
-    left: 10%;
-    position: absolute;
-    top: -60%;
-  }
 
     @keyframes slide-in {
         from {
