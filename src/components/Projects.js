@@ -15,7 +15,7 @@ function Projects() {
             desc: [
                 "Modified version of Tinder (dating app) that determines two users’ compatibility based on their music taste",
                 "Scraped and processed user data to find their shared favorite artists/genres and give relevant recommendations",
-                "Implemented decision trees in scikit-learn to calculate how similar their favorite songs are, based on audio features"
+                "Implemented decision trees to calculate how similar their favorite songs are, based on audio features"
             ],
             link: "https://www.github.com/kath3rine/tinderfy"
         },

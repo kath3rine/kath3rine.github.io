@@ -10,11 +10,11 @@ function Experience() {
         {
             id: 1,
             img: ARL,
-            role: "Neuromorphic Computing Research Intern",
+            role: "Neuromorphic Computing  Intern",
             company: "@ US Army Research Lab",
             date: "May 2023 - Present",
             desc: [
-                "Research living vs artificial neural network dynamics at UMD Nonlinear Dynamics of Complex Systems Lab",
+                "Research living vs artificial neural network dynamics for bio-inspired tech at UMD Nonlinear Dynamics of Complex Systems Lab",
                 "Perturb living neural networks through optogenetic activation/inhibition, and study cellular activity via calcium imaging and image segmentation",
                 "Model neural network dynamics and optimize performance by implementing parallel reservoir computing architecture"
 
@@ -33,11 +33,11 @@ function Experience() {
         {
             id: 3,
             img: UMD,
-            role: "Machine Learning Research Assistant",
+            role: "Research Assistant",
             company: "@ UMD Computational Cognitive Neuroscience & Psychiatry Lab",
             date: "Aug 2022 - Dec 2022",
             desc: [
-                "Analyzed EEG data from recognition memory tasks and computationally model information processing in learning, decision making, and episodic memory.",
+                "Analyzed EEG data from recognition memory tasks and computationally modelled information processing in learning, decision making, and episodic memory.",
                 "Used Python to preprocess data and implement various machine learning classifiers, achieving ~80% accuracy in predicting subjects’ response"
             ]
         }
