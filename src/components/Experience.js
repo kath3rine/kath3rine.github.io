@@ -10,14 +10,13 @@ function Experience() {
         {
             id: 1,
             img: ARL,
-            role: "Neuromorphic Computing  Intern",
+            role: "Neuromorphic Computing Intern",
             company: "@ US Army Research Lab",
             date: "May 2023 - Present",
             desc: [
-                "Research living vs artificial neural network dynamics for bio-inspired tech at UMD Nonlinear Dynamics of Complex Systems Lab",
-                "Perturb living neural networks through optogenetic activation/inhibition, and study cellular activity via calcium imaging and image segmentation",
-                "Model neural network dynamics and optimize performance by implementing parallel reservoir computing architecture"
-
+                "Researching living neural network dynamics for applications in bio-inspired tech", 
+                "Culture cells to form living neural networks, perturb them optogenetically, perform fluorescence microscopy to monitor activity, and analyze cellular communication by developing image segmentation algorithms",
+                "Write Python script and conduct experiments on a digital micromirror device to allow for time-dependent photostimulation input on a neural culture"
             ]
         },
         {
@@ -27,18 +26,28 @@ function Experience() {
             company: "@ TAMID Group at Maryland",
             date: "Mar 2023 - Present",
             desc: [
-                "Software development/data analysis for tech startups."
+                "Selected as a member of a competitive business club to apply software development and data analysis skills to advise tech startups"
             ]
         },
         {
             id: 3,
             img: UMD,
+            role: "Academic Peer Mentor",
+            company: "University of Maryland",
+            date: "Aug 2023 - Present",
+            desc: [
+                "Assist in teaching General Chemistry for Engineers course by leading office hours, planning and facilitating in-class group activities, and providing feedback to professors"
+            ]
+        },
+        {
+            id: 4,
+            img: UMD,
             role: "Research Assistant",
             company: "@ UMD Computational Cognitive Neuroscience & Psychiatry Lab",
             date: "Aug 2022 - Dec 2022",
             desc: [
-                "Analyzed EEG data from recognition memory tasks and computationally modelled information processing in learning, decision making, and episodic memory.",
-                "Used Python to preprocess data and implement various machine learning classifiers, achieving ~80% accuracy in predicting subjects’ response"
+                "Computationally modeled information processing in learning, decision making, and episodic memory",
+                "Analyzed EEG’s from recognition memory tasks by preprocessing time-series data and developing machine learning classifiers with scikit-learn and TensorFlow in Python"
             ]
         }
     ]

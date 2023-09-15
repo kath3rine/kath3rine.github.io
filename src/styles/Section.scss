@@ -30,7 +30,7 @@
 
 .container {
   display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
     gap: 20px;
     margin: 3%;
 }
@@ -38,7 +38,7 @@
 .flip-card-outer {
   background-color: transparent;
     perspective: 1000px;
-    height: 350px;
+    height: 400px;
     display: flex;
 
   .flip-card-inner {
@@ -88,8 +88,8 @@
 
         h3 {
           color: var(--col1);
-          margin-left: 5%;
-          margin-right: 5%;
+          margin-left: 3%;
+          margin-right: 3%;
         }
 
         p, a {
@@ -109,12 +109,15 @@
         .proj-tech {
           margin: 3%;
           font-family: "Inconsolata", monospace;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
         }
 
         label {
           padding: 2px 8px;
           border-radius: 4px;
-          margin-left: 5px;
+          margin: 3px;
           color: var(--col5);
         }
 
@@ -137,9 +140,10 @@
         p {
           font-family: "Inconsolata", monospace;
           font-weight: 500;
-          line-height: 1.05;
+          line-height: 1;
+          font-size: 15px;
           color: var(--col5);
-          margin: 10%;
+          margin: 7%;
         }
 
       }

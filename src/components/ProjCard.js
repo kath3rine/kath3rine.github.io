@@ -19,7 +19,8 @@ function ProjCard({card}) {
       "React": 'tcol2',
       "Unity": 'tcol2',
       "Spotify API": 'tcol2',
-      "scikit-learn": 'tcol2'
+      "scikit-learn": 'tcol2',
+      "Pandas": 'tcol2'
     };
 
     return (
@@ -32,11 +33,6 @@ function ProjCard({card}) {
             <h2> {card.title} </h2>
             <div className="proj-tech">
               {card.tech.map((t) => (
-                <label className={`${techColors[t]}`}>{t}</label>
-              ))} 
-            </div>
-            <div className="proj-tech">
-              {card.tech2.map((t) => (
                 <label className={`${techColors[t]}`}>{t}</label>
               ))} 
             </div>
