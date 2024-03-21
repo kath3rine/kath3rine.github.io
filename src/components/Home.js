@@ -8,7 +8,7 @@ function Home() {
         <div className="home-section" id="home-text">
             <p>Hi, I'm </p>
             <h1> Katherine</h1>
-            <h2> Computer Science & Immersive Media Design @ University of Maryland </h2>
+            <h2> Computer Science & Immersive Media Design Student @ University of Maryland </h2>
 
             <div className="buttons">
                 <a className="button-link" href="#experience">Experience</a>

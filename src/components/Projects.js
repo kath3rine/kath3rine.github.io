@@ -3,6 +3,7 @@ import ProjCard from './ProjCard.js';
 import Tinderfy from '../images/tinderfy.png'
 import Fractal from '../images/fractal.png';
 import Portfolio from '../images/portfolio.png'
+import Escape from '../images/umdescape.png'
 
 function Projects() {
     const cards = [
@@ -12,15 +13,25 @@ function Projects() {
             title: "Tinderfy",
             tech: ["Flask", "Python", "Spotify API", "HTML", "CSS", "scikit-learn", "Pandas"],
             desc: [
-                "Quasi-satirical fake dating web app that determines two users’ compatibility based on their music taste/preferences",
-                "Created fake Tinder profiles featuring joint recommendations, favorite artists/genres, content they both like, and more",
-                "Implemented OAuth; scraped, processed, and analyzed user data; implemented decision trees to calculate how similar their favorite songs are"
-
+                "Created a quasi-satirical fake dating app centered around music taste compatibility assessment",
+                "Developed simulated Tinder profiles showing joint music recommendations, favorite artists/genres, and shared content",
+                "Utilized Pandas and Spotify API for user authorization, data scraping, processing, and analysis",
+                "Used decision trees from scikit-learn to calculate the similarity of users’ favorite songs, enhancing the algorithm’s accuracy"
             ],
             link: "https://www.github.com/kath3rine/tinderfy"
         },
         {
             id: 2,
+            img: Escape,
+            title: "UMD Escape Room",
+            tech: ["Unity", "C#"],
+            desc: [
+                "Virtual reality experience where the user completes a series of challenges to escape UMD’s campus, including easter eggs and immersive features so the user can make decisions and interact with elements in the scene"
+            ],
+            link: "https://drive.google.com/file/d/1D5EMozAgoZnIrtSE0JXz8nlfXzslc4LB/view?usp=drive_link"
+        },
+        {
+            id: 3,
             img: Fractal,
             title: "Fractal Explorer",
             tech: ["Unity", "C#"],
@@ -29,7 +40,7 @@ function Projects() {
             link: "https://www.fractal-explorer.github.io"
         },
         {
-            id: 3,
+            id: 4,
             img: Portfolio,
             title: "Portfolio Website",
             tech: ["React", "HTML", "CSS", "JavaScript"],
