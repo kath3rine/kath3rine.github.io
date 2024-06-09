@@ -11,16 +11,13 @@ function ProjCard({card}) {
     const techColors = {
       "Python": 'tcol1',
       "JavaScript": 'tcol1',
-      "HTML/CSS": 'tcol1',
       "HTML": 'tcol1',
       "CSS": 'tcol1',
       "C#": 'tcol1',
       "Flask": 'tcol2',
       "React": 'tcol2',
       "Unity": 'tcol2',
-      "Spotify API": 'tcol2',
-      "scikit-learn": 'tcol2',
-      "Pandas": 'tcol2'
+      "Maya": 'tcol2'
     };
 
     return (
@@ -36,7 +33,7 @@ function ProjCard({card}) {
                 <label className={`${techColors[t]}`}>{t}</label>
               ))} 
             </div>
-            <a href={card.link}> LINK </a>
+            <a href={card.link}> (link) </a>
           </div>
           <div className="card back">
               {card.desc.map((d) => (

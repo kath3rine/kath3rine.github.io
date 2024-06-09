@@ -1,5 +1,6 @@
 import '../styles/Section.scss';
 import ExpCard from '../components/ExpCard.js';
+import Geico from '../images/geico.png';
 import ARL from '../images/arl.png';
 import Tamid from '../images/tamid.png';
 import UMD from '../images/umd.png';
@@ -10,47 +11,59 @@ function Experience() {
     const cards = [
         {
             id: 1,
-            img: ARL,
-            role: "Neuromorphic Computing Intern",
-            company: "@ US Army Research Lab",
-            date: "May 2023 - Present",
+            img: Geico,
+            role: "Software Engineer Intern",
+            company: "@ GEICO",
+            date: "Jun 2024 - Present",
             desc: [
-                "Optically perturb and computationally model living neural network dynamics to develop a hybrid computing I/O platform", 
-                "Culture cells and optogenetically modulate networks, use fluorescence microscopy to monitor communication, and implement image segmentation to analyze calcium activity in epifluorescent images",
-                "Use Python and Docker with a DMD to enable time-dependent photostimulation and conduct real-time signal/image analysis via web sockets and HPC"
+                "◇ Site Reliability Engineering: Availability & Incident Management Team",
+                "◇ Develop the API for an internal incident reporting application using C# and Azure"
             ]
         },
         {
             id: 2,
-            img: UMDCS,
-            role: "Teaching Assistant",
-            company: "@ UMD Dept. of Computer Science",
-            date: "Jan 2024 - Present",
+            img: ARL,
+            role: "Neuromorphic Computing Intern",
+            company: "@ U.S. Army Research Lab",
+            date: "May 2023 - Present",
             desc: [
-                "Teach two discussions and hold two office hours per week for Discrete Structures to guide students and enhance content comprehension",
-                "Grade and write assignments for 200 students covering logic, proofs, sets, probability, etc"
+                "◇ Optically perturb and computationally model living neural network dynamics to develop a hybrid computing I/O platform", 
+                "◇ Optogenetically modulate living neural networks, and use fluorescence microscopy, calcium imaging, and image segmentation to analyze neuronal communication",
+                "◇ Write Python scripts to enable time-dependent stimulation on a digital micromirror device and conduct real-time analysis with web sockets and HPC"
             ]
         },
         {
             id: 3,
-            img: Tamid,
-            role: "Tech Consultant",
-            company: "@ TAMID Group at Maryland",
-            date: "Mar 2023 - Present",
+            img: UMDCS,
+            role: "Computer Science Teaching Assistant",
+            company: "@ University of Maryland",
+            date: "Jan 2024 - Present",
             desc: [
-                "Selected as a member of a competitive business club to apply software development skills to advise tech startups",
-                "Collaboratively create a full-stack app, utilizing React Native for the user interface and allowing users to schedule appointments, search through a database, chat, and video conference"
+                "◇ Hold discussion sections and office hours for Discrete Structures to guide students and enhance content comprehension",
+                "◇ Grade and write assignments for 200 students covering logic, proofs, sets, probability, etc"
             ]
         },
         {
             id: 4,
+            img: Tamid,
+            role: "Tech Consultant",
+            company: "@ TAMID Group at Maryland",
+            date: "Mar 2023 - May 2024",
+            desc: [
+                "◇ Selected as a member of a competitive business club to apply software development skills to advise tech startups",
+                "◇ Collaboratively built a full-stack app, utilizing React Native for the user interface, and allowing users to schedule appointments, search through a database, chat, and video conference"
+            ]
+        },
+        {
+            id: 5,
             img: UMD,
             role: "Research Assistant",
-            company: "@ UMD Computational Cognitive Neuroscience & Psychiatry Lab",
+            company: "@ University of Maryland",
             date: "Aug 2022 - Dec 2022",
             desc: [
-                "Conducted computational modeling of information processing in learning, decision making, and episodic memory", 
-                "Processed EEG data from recognition memory tasks and developed machine learning classifiers in Python to extract relevant features, achieving an ~80% accuracy rate in predicting subjects’ responses"
+                "◇ @ Computational Cognitive Neuroscience & Psychiatry Lab",
+                "◇ Computationally modeled information processing in learning, decision making, and episodic memory", 
+                "◇ Processed EEG data from recognition memory tasks and developed machine learning classifiers in Python to extract relevant features, achieving an ~80% accuracy rate in predicting subjects’ responses"
             ]
         }
     ]

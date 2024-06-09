@@ -1,7 +1,7 @@
 @import './Global.css';
 
 .Home {
-    background-color: var(--col5);
+    /*background-color: var(--col1);*/
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     text-align: left;
@@ -12,7 +12,7 @@
   
     .Home h1 {
       font-size: 12vh;
-      background: -webkit-linear-gradient(-45deg, var(--col1), white);
+      background: -webkit-linear-gradient(-45deg, var(--aqua), var(--white));
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       animation: slide-in 2s;
@@ -27,7 +27,7 @@
     }
   
 .Home p {
-      color: var(--col2);
+      color: var(--lightest-slate);
       font-size: 3vh;
       animation: slide-in 2s;
     }
@@ -37,8 +37,8 @@
 }
 
 .button-link {
-    color: var(--col2);
-    border: var(--col2) solid 2px;
+    color: var(--lightest-slate);
+    border: var(--lightest-slate) solid 2px;
     width: 30%;
     text-align: center;
     text-decoration: none;
@@ -47,12 +47,12 @@
 }
     
     .button-link:hover {
-      color: var(--col1);
-      border-color: var(--col1);
+      color: white;
+      border-color: white;
     }
   
     #contact-button {
-      border: var(--col1) solid 2px;
+      border: var(--aqua) solid 2px;
     }
 
 

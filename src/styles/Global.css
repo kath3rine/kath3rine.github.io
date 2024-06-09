@@ -2,16 +2,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap');
 
 :root {
-  --col1: #a3e8e5;
-  --col22: #e4e6f5;
-  --col2: #c3c9f3;
-  --col4: #878ECD;
-  --col5: #5c64b1;
-  --col6: #454ea2;
+  --purple: #3d4592;
+  --light-purple: #4d559e;
+  --lightest-purple: #6069b3;
+  --slate: #7e83b0;
+  --light-slate: #9e9dd3;
+  --lightest-slate: #c3c3e1;
+  --white: #e2e2f4;
+  --aqua: #a3e8e5;
 }
 
 body {
-    background-color: var(--col5);
+    background-color: var(--purple);
     font-family: "Poppins", sans-serif;
     font-weight: 400;
   }
