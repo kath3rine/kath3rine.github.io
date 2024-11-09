@@ -56,7 +56,8 @@ function Projects() {
             title: "Portfolio Website",
             tech: ["React", "HTML", "CSS", "JavaScript"],
             desc: [
-                "◇ This website! Designed and coded an animated and responsive portfolio website from scratch, featuring projects and info"
+                "◇ This website! Designed and coded an engaging portfolio website from scratch, featuring more projects and info",
+                "◇ Implemented responsiveness for a smoother user experience, and used component-based architecture for scalability"
             ],
             link: "https://www.kath3rine.github.io"
         }
