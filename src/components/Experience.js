@@ -1,19 +1,38 @@
 import '../styles/Section.scss';
-import ExpCard from '../components/ExpCard.js';
+import React, { useState } from 'react';
 import Geico from '../images/geico.png';
 import ARL from '../images/arl.png';
 import Tamid from '../images/tamid.png';
 import UMD from '../images/umd.png';
 import UMDCS from '../images/umdcs.png';
 
-function Experience() {
+function Item({children}) {
+    return (
+        <div>{children}</div>
+    )
+}
 
-    const cards = [
+function Experience() {
+    const [item, setItem] = useState(0);
+
+    const handleChange = (newIndex) => {
+        setItem(newIndex);
+    }  
+
+    const experiences = [
         {
-            id: 1,
+            company: "GEICO",
             img: Geico,
-            role: "Software Engineer Intern",
-            company: "@ GEICO",
+            role: "Software Engineer @",
+            date: "Jul 2025 - Present",
+            desc: [
+                "Incoming summer 2025"
+            ]
+        },
+        {
+            company: "GEICO",
+            img: Geico,
+            role: "Software Engineer Intern @",
             date: "Jun 2024 - Aug 2024",
             desc: [
                 "◇ Created a tool for managing and manipulating documents to streamline availability and incident management",
@@ -23,10 +42,9 @@ function Experience() {
             ]
         },
         {
-            id: 2,
+            company: "U.S. Army Research Lab",
             img: ARL,
-            role: "Neuromorphic Computing Researcher",
-            company: "@ U.S. Army Research Lab",
+            role: "Neuromorphic Computing Researcher @",
             date: "May 2023 - May 2024",
             desc: [
                 "◇ Optically perturb and computationally model living neural network dynamics for a hybrid computing I/O platform", 
@@ -35,11 +53,10 @@ function Experience() {
             ]
         },
         {
-            id: 3,
+            company: "University of Maryland",
             img: UMDCS,
-            role: "Computer Science Teaching Assistant",
-            company: "@ University of Maryland",
-            date: "Jan 2024 - Present",
+            role: "Computer Science Teaching Assistant @",
+            date: "Jan 2024 - Dec 2024",
             desc: [
                 "◇ CMSC351: Algorithms and CMSC250: Discrete Structures",
                 "◇ Teach discussion sections and hold office hours to guide students and enhance content comprehension",
@@ -47,26 +64,13 @@ function Experience() {
             ]
         },
         {
-            id: 4,
+            company: "TAMID at Maryland",
             img: Tamid,
-            role: "Tech Consultant",
-            company: "@ TAMID Group at Maryland",
+            role: "Tech Consultant @",
             date: "Mar 2023 - May 2024",
             desc: [
                 "◇ Applied software development skills to advise tech startups as a member of a competitive business club",
                 "◇ Collaboratively built a full-stack app for an edutech startup, utilizing React Native for the user interface and allowing users to schedule appointments, search through a database, chat, and video conference"
-            ]
-        },
-        {
-            id: 5,
-            img: UMD,
-            role: "Research Assistant",
-            company: "@ University of Maryland",
-            date: "Aug 2022 - Dec 2022",
-            desc: [
-                "◇ @ Computational Cognitive Neuroscience & Psychiatry Lab",
-                "◇ Computationally modeled information processing in learning, decision making, and episodic memory", 
-                "◇ Processed EEG data from recognition memory tasks and developed machine learning classifiers in Python to extract relevant features, achieving an ~80% accuracy rate in predicting subjects’ responses"
             ]
         }
     ]
@@ -77,9 +81,24 @@ function Experience() {
                 <span className="section-title"> experience.py </span>
                 <p>print("click on each card for more info")</p>
                 <div className="container">
-                {cards.map((card) => (
-                    <ExpCard key={card.id} card={card} />
-                ))}
+                    <div className="sidebar">
+                        {experiences.map((item, index) => (
+                            <div
+                            key={index}
+                            onClick={() => handleChange(index)}>
+                                {item.company}
+                            </div>
+                        ))}
+                    </div>
+
+                    <div className="job">
+                        <h3 className='jobTitle'>
+                            {experiences[item].role}{experiences[item].company}
+                        </h3>
+                        <p className='jobDescription'>
+                            {experiences[item].desc}
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
