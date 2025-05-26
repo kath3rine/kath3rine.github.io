@@ -6,20 +6,25 @@
     color: var(--accent);
     margin: 0vw;
   }
-  
-  p {
-    color: var(--text);
-  }
 }
 
 #home-header {
   animation: slide-in 2s;
   font-family: "Courier Prime", monospace;
+
+  p {
+    color: var(--header);
+    font-size: 4vh;
+  }
 }
 
 #home-content {
   animation: slide-in2 4s;
   
+}
+
+.intro {
+  color: var(--text);
 }
   
 .buttons {

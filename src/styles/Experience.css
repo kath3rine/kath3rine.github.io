@@ -1,13 +1,61 @@
 @import './Global.css';
 
+#experience-section {
+    border-top: 1px var(--detail) solid;
+}
+
 #job-content {
     display: flex;
 }
 
-#sidebar {
+#job-sidebar {
     flex: 1;
+    border-right: 1px var(--detail) solid;
 }
 
-#info {
+#job-info {
     flex: 3;
+    margin-left: 5%;
+    padding: 0px;
+}
+
+#sidebar-company {
+    font-family: "Courier Prime", monospace;
+    color: var(--text);
+    margin-bottom: 10%;
+}
+
+#sub-item {
+    margin-bottom: 10%;
+}
+
+#title span {
+    font-family: "Courier Prime", monospace;
+    font-size: 4vh;
+    font-weight: 700;
+}
+
+#job-desc {
+    margin-top: 5%;
+}
+
+#job-desc-item, #job-date {
+    margin-top: 0%;
+    margin-bottom: 1%;
+}
+
+#role {
+    color: var(--header);
+}
+
+#company {
+    color: var(--accent);
+}
+
+a:hover {
+    color: var(--header);
+}
+
+.job-component {
+    padding: 2%;
 }

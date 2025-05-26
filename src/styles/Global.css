@@ -2,28 +2,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap');
 
 :root {
-  --background: #252e7c;
-  --text: #9196be;
+  --background: #2e3784;
+  --text: #7d83b1;
   --header: #dee;
-  --accent: #a3e8e5;
+  --accent: #8ae4e0;
+  --detail: #454d96;
 }
 
-p {
+p, a {
   font-size: 3vh;
+  color: var(--text);
 }
 
 body {
     background-color: var(--background);
-    font-family: "Outfit", sans-serif;
     font-weight: 400;
+    font-family: "Outfit", sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: "Courier Prime", monospace;
+  color: var(--header);
 }
 
 .section {
-  padding: 10%;
-  margin: 1% auto 5% auto;
+  margin: 10%;
 }
 
 .section-title {
   font-weight: 700;
-  border: red 2px solid;
+  color: var(--accent);
+  font-size: 6vh;
+  font-family: "Courier Prime", monospace;
 }
