@@ -1,38 +1,48 @@
 import '../styles/Home.css';
 import '../styles/Global.css';
 import Katherine from '../images/katherine.png';
+import KL from '../images/animalfarm.png';
 import Contact from './Contact.js'
 
 function Home() {
+
+  const bio = [
+    "B.S. Computer Science and B.S. Immersive Media Design: Computing from University of Maryland, currently working as a software engineer at GEICO",
+  ]
+
+  const buttons = [
+    {"link": "#experience", "text": "cd ~/experience"},
+    {"link": "#projects", "text": "cd ~/projects"}
+  ]
+
   return (
     <div className="section" id="home">
-        <div>
+        <div id="home-left">
           <div id="home-header">
             <p>Hi, I'm </p>
             <h1> Katherine Li</h1>
           </div>
 
           <div id="home-content">
+            <div id="intro">
+              {bio.map((x) => (
+                <p>{x}</p>
+              ))}
+            </div>
 
-            <p className="intro">
-              B.S. Computer Science and B.S. in Immersive Media Design: Computing @ University of Maryland
-            </p>
-            <p className="intro">
-              Software Engineer @ GEICO
-            </p>
-          
-
-            <div className="buttons">
-              <div className="button">
-                <a href="#experience">cd ~/experience</a>
-              </div>
-              <div className="button">
-                <a  href="#projects">cd ~/projects</a>
+            <div id="buttons">
+                {buttons.map((button) => (
+                  <div id="button">
+                    <a href={button.link}>{button.text}</a>
+                  </div>
+                ))}
               </div>
               <Contact/>
-                
-            </div>
           </div>
+        </div>
+
+        <div id="home-right">
+            <img id="pfp" src={Katherine}/>
         </div>
     </div>
   );

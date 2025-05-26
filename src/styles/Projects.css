@@ -1,31 +1,21 @@
-.card-container {
-    width: 200px;
-    height: 300px;
-    position: relative;
-    cursor: pointer;
-    perspective: 1000px;
-  }
-  
-  .card-front, .card-back {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    backface-visibility: hidden;
-    transition: transform 0.5s;
+@import './Global.css';
+
+#project-section {
+  border-top: 1px var(--text) solid;
+    top: 1vh;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid black;
+    flex-direction: column;
+}
+
+#projects-content {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(250px, 1fr));
+    gap: 40px;
+    margin: 20px;
   }
   
-  .card-back {
-    transform: rotateY(180deg);
-  }
-  
-  .flipped .card-front {
-    transform: rotateY(180deg);
-  }
-  
-  .flipped .card-back {
-    transform: rotateY(360deg);
+  @media only screen and (max-width: 1000px) {
+    #projects-content {
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
   }

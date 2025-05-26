@@ -80,7 +80,7 @@ function Experience() {
 
     return (
         <div className="section" id="experience-section">
-            <h1 className="section-title"> ~/experience </h1>
+            <h1 className="section-title" id="experience"> ~/experience </h1>
                 <div className="section-content" id="job-content">
 
                     <div className="job-component" id="job-sidebar">

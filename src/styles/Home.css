@@ -1,11 +1,22 @@
 @import './Global.css';
 
 #home {
-  h1 {
-    font-size: 12vh;
-    color: var(--accent);
-    margin: 0vw;
-  }
+  display: flex;
+  height: 90vh;
+}
+
+#home-left {
+  flex: 1.5;
+}
+
+#home-right {
+  flex: 1;
+}
+
+#home h1 {
+  font-size: 12vh;
+  color: var(--accent);
+  margin: 0vw;
 }
 
 #home-header {
@@ -23,25 +34,31 @@
   
 }
 
-.intro {
+#intro {
   color: var(--text);
 }
   
-.buttons {
+#buttons {
   margin-top: 5%;
 }
 
-.button {
+#button {
   margin-top: 2%;
 }
 
-.button a {
+#button a {
   color: var(--header);
   font-family: "Courier Prime", monospace;
 }
 
-.button a:hover {
+#button a:hover {
   color: var(--accent);
+}
+
+#pfp {
+  height: 90%;
+  width: 100%;
+  margin: 0px;
 }
   
 @keyframes slide-in {

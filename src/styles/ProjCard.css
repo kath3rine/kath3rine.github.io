@@ -1,0 +1,76 @@
+@import './Global.css';
+
+h2 { 
+  font-size: 5vh;
+}
+
+#proj-tech {
+  margin: 3%;
+  font-family: "Courier Prime", monospace;
+  display: flex;
+  font-size: 2vh;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+label {
+  padding: 2px 8px;
+  border-radius: 4px;
+  margin: 3px;
+  color: var(--header);
+  background-color: var(--background);
+  padding: 5px 10px 5px 10px;
+}
+
+.card {
+    height: 400px;
+    position: relative;
+    cursor: pointer;
+    perspective: 1000px;
+  }
+
+.card-front:hover, .card-back:hover {
+  background-color: var(--detail2);
+}
+  
+  .card-front, .card-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    transition: transform 0.5s;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--detail);
+    border-radius: 15px;
+    padding: 10px;
+  }
+
+  .card-front {
+    text-align: center;
+  }
+  
+  .card-back {
+    transform: rotateY(180deg);
+    font-family: "Outfit", sans-serif;
+    font-weight: 400;
+    
+    p {
+      margin: 10px;
+    }
+  }
+  
+  .flipped .card-front {
+    transform: rotateY(180deg);
+  }
+  
+  .flipped .card-back {
+    transform: rotateY(360deg);
+  }
+
+img {
+    width: 85%;
+    height: 40%;
+    border-radius: 10px;
+    margin: 5%;
+  }

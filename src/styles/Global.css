@@ -4,9 +4,10 @@
 :root {
   --background: #2e3784;
   --text: #7d83b1;
-  --header: #dee;
+  --header: #cbe;
   --accent: #8ae4e0;
-  --detail: #454d96;
+  --detail: #3a4290;
+  --detail2: #40499b;
 }
 
 p, a {
@@ -26,7 +27,7 @@ h1, h2, h3 {
 }
 
 .section {
-  margin: 10%;
+  margin: 5%;
 }
 
 .section-title {

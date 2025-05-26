@@ -1,7 +1,7 @@
 @import './Global.css';
 
 #experience-section {
-    border-top: 1px var(--detail) solid;
+    border-top: 1px var(--text) solid;
 }
 
 #job-content {
