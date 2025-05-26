@@ -1,0 +1,21 @@
+@import './Global.css';
+
+#project-section {
+  border-top: 1px var(--text) solid;
+    top: 1vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#projects-content {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(250px, 1fr));
+    gap: 40px;
+    margin: 20px;
+  }
+  
+  @media only screen and (max-width: 1000px) {
+    #projects-content {
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+  }

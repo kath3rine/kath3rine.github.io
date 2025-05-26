@@ -1,48 +1,35 @@
-import { useState } from 'react';
-import cn from "classnames";
+import React, { useState } from 'react';
+import '../styles/ProjCard.css'
+import '../styles/Global.css';
 
 function ProjCard({card}) {
-    const [showBack, setShowBack] = useState(false); 
+  const [isFlipped, setIsFlipped] = useState(false);
 
-    function handleClick() { 
-        setShowBack(!showBack); 
-    } 
+  const handleClick = () => {
+    setIsFlipped(!isFlipped);
+  };
 
-    const techColors = {
-      "Python": 'tcol1',
-      "JavaScript": 'tcol1',
-      "HTML": 'tcol1',
-      "CSS": 'tcol1',
-      "C#": 'tcol1',
-      "Flask": 'tcol2',
-      "React": 'tcol2',
-      "Unity": 'tcol2',
-      "Maya": 'tcol2'
-    };
+  return (
+    <div className={`card ${isFlipped ? 'flipped' : ''}`} onClick={handleClick}>
+      <div className="card-front">
+        <img id="proj-img" src={card.img}/>
+        <h2>{card.title}</h2>
 
-    return (
-      <div className="flip-card-outer"
-      onClick={handleClick}>
-        <div className={cn("flip-card-inner", {
-          showBack })}>
-          <div className="card front">
-            <img className="proj-img" src={card.img}/>
-            <h2> {card.title} </h2>
-            <div className="proj-tech">
-              {card.tech.map((t) => (
-                <label className={`${techColors[t]}`}>{t}</label>
-              ))} 
-            </div>
-            <a href={card.link}> (link) </a>
-          </div>
-          <div className="card back">
-              {card.desc.map((d) => (
-                <p>{d}</p>
-              ))}
-          </div>
+        <div id="proj-tech">
+          {card.tech.map((x) => (
+            <label>{x}</label>
+          ))}
         </div>
+
+        <a href={card.link}>LINK</a>
       </div>
-    );
-  }
-  
-  export default ProjCard;
+      <div className="card-back">
+        {card.desc.map((x) => (
+          <p>{x}</p>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+export default ProjCard;

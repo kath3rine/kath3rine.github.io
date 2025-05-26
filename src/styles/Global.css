@@ -1,19 +1,38 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap');
 
 :root {
-  --purple: #454d95;
-  --light-purple: #545ca6;
-  --lightest-purple: #6670b7;
-  --slate: #7e83b0;
-  --light-slate: #9e9dd3;
-  --lightest-slate: #c3c3e1;
-  --white: #e2e2f4;
-  --aqua: #a3e8e5;
+  --background: #2e3784;
+  --text: #7d83b1;
+  --header: rgb(190, 187, 238);
+  --accent: #8ae4e0;
+  --detail: #3a4290;
+  --detail2: #40499b;
+}
+
+p, a {
+  font-size: 3vh;
+  color: var(--text);
 }
 
 body {
-    background-color: var(--purple);
-    font-family: "Poppins", sans-serif;
+    background-color: var(--background);
     font-weight: 400;
-  }
+    font-family: "Outfit", sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: "Courier Prime", monospace;
+  color: var(--header);
+}
+
+.section {
+  margin: 5%;
+}
+
+.section-title {
+  font-weight: 700;
+  color: var(--accent);
+  font-size: 6vh;
+  font-family: "Courier Prime", monospace;
+}
