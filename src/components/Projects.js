@@ -1,7 +1,7 @@
 import '../styles/Projects.css'
 import ProjCard from './ProjCard.js';
 import Tinderfy from '../images/tinderfy.png'
-import Animalfarm from '../images/animalfarm.png'
+import Impostar from '../images/impostar.JPG'
 import Portfolio from '../images/portfolio.png'
 
 function Projects() {
@@ -11,7 +11,7 @@ function Projects() {
             title: "Tinderfy",
             tech: ["Flask", "Python", "HTML", "CSS"],
             desc: [
-                "◇ Created a quasi-satirical fake dating app centered around music taste compatibility assessment",
+                "◇ Quasi-satirical fake dating app centered around music taste compatibility assessment",
                 "◇ Developed simulated Tinder profiles showing joint music recommendations, favorite artists/genres, and shared content",
                 "◇ Utilized Pandas and Spotify API for user authorization, data scraping, processing, and analysis",
                 "◇ Used decision trees from scikit-learn to calculate the similarity of users’ favorite songs, enhancing the algorithm’s accuracy"
@@ -19,13 +19,17 @@ function Projects() {
             link: "https://www.github.com/kath3rine/tinderfy"
         },
         {
-            img: Animalfarm,
-            title: "Animal Farm",
+            img: Impostar,
+            title: "Impost-AR",
             tech: ["Unity", "C#", "Maya"],
             desc: [
-                "◇ Satirical 3D game where the user must manage a successful farm, intended to educate on unethical farming"
+                "◇ Collaborative senior capstone project",
+                "◇ Multiplayer augmented reality escape room / scavenger hunt based loosely off 'And Then There Were None'",
+                "◇ Players solve virtual and physical puzzles to uncover clues, stay alive, and figure out which player is the imposter",
+                "◇ Implemented networking with Photon Engine for seamless multiplayer interaction",
+                "◇ Designed various engaging blended-reality mini-games and integrated them into the gameplay"
             ],
-            link: "https://drive.google.com/file/d/1h9jGdls9DGvix7wGnakzJO5dDD5Mo2Rg/view?resourcekey"
+            link: "https://sites.google.com/terpmail.umd.edu/emma-and-katherine-capstone"
         },
         {
             img: Portfolio,

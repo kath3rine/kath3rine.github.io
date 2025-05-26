@@ -1,7 +1,6 @@
 import '../styles/Home.css';
 import '../styles/Global.css';
 import Katherine from '../images/katherine.png';
-import KL from '../images/animalfarm.png';
 import Contact from './Contact.js'
 
 function Home() {
@@ -20,13 +19,13 @@ function Home() {
         <div id="home-left">
           <div id="home-header">
             <p>Hi, I'm </p>
-            <h1> Katherine Li</h1>
+            <h1> Katherine</h1>
           </div>
 
           <div id="home-content">
             <div id="intro">
-              {bio.map((x) => (
-                <p>{x}</p>
+              {bio.map((item) => (
+                <p>{item}</p>
               ))}
             </div>
 

@@ -6,7 +6,7 @@ h2 {
 
 #proj-tech {
   margin: 3%;
-  font-family: "Courier Prime", monospace;
+  font-family: "Outfit", sans-serif;
   display: flex;
   font-size: 2vh;
   flex-wrap: wrap;
@@ -42,7 +42,7 @@ label {
     justify-content: center;
     align-items: center;
     background-color: var(--detail);
-    border-radius: 15px;
+    border-radius: 10px;
     padding: 10px;
   }
 
@@ -70,7 +70,7 @@ label {
 
 img {
     width: 85%;
-    height: 40%;
-    border-radius: 10px;
-    margin: 5%;
+    height: 50%;
+    border-radius: 5px;
+    margin: 2%;
   }
