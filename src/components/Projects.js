@@ -1,4 +1,4 @@
-import '../styles/Section.scss';
+
 import ProjCard from './ProjCard.js';
 import Tinderfy from '../images/tinderfy.png'
 import Animalfarm from '../images/animalfarm.png'
@@ -7,7 +7,7 @@ import Portfolio from '../images/portfolio.png'
 import Escape from '../images/umdescape.png'
 
 function Projects() {
-    const cards = [
+    const projects = [
         {
             id: 1,
             img: Tinderfy,
@@ -68,8 +68,8 @@ function Projects() {
                 <span className="section-title"> projects.py </span>
                 <p> print("click on each card for more info")</p>
                 <div className="container">
-                {cards.map((card) => (
-                    <ProjCard key={card.id} card={card} />
+                {projects.map((card) => (
+                    <ProjCard card={card} />
                 ))}
                 </div>
             </div>

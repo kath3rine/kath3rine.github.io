@@ -1,0 +1,13 @@
+@import './Global.css';
+
+#job-content {
+    display: flex;
+}
+
+#sidebar {
+    flex: 1;
+}
+
+#info {
+    flex: 3;
+}

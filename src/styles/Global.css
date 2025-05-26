@@ -1,19 +1,29 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap');
 
 :root {
-  --purple: #454d95;
-  --light-purple: #545ca6;
-  --lightest-purple: #6670b7;
-  --slate: #7e83b0;
-  --light-slate: #9e9dd3;
-  --lightest-slate: #c3c3e1;
-  --white: #e2e2f4;
-  --aqua: #a3e8e5;
+  --background: #252e7c;
+  --text: #9196be;
+  --header: #dee;
+  --accent: #a3e8e5;
+}
+
+p {
+  font-size: 3vh;
 }
 
 body {
-    background-color: var(--purple);
-    font-family: "Poppins", sans-serif;
+    background-color: var(--background);
+    font-family: "Outfit", sans-serif;
     font-weight: 400;
-  }
+}
+
+.section {
+  padding: 10%;
+  margin: 1% auto 5% auto;
+}
+
+.section-title {
+  font-weight: 700;
+  border: red 2px solid;
+}

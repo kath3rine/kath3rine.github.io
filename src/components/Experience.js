@@ -1,16 +1,11 @@
-import '../styles/Section.scss';
+import '../styles/Experience.css';
+import '../styles/Global.css';
 import React, { useState } from 'react';
 import Geico from '../images/geico.png';
 import ARL from '../images/arl.png';
 import Tamid from '../images/tamid.png';
 import UMD from '../images/umd.png';
 import UMDCS from '../images/umdcs.png';
-
-function Item({children}) {
-    return (
-        <div>{children}</div>
-    )
-}
 
 function Experience() {
     const [item, setItem] = useState(0);
@@ -23,7 +18,7 @@ function Experience() {
         {
             company: "GEICO",
             img: Geico,
-            role: "Software Engineer @",
+            role: "Software Engineer",
             date: "Jul 2025 - Present",
             desc: [
                 "Incoming summer 2025"
@@ -32,7 +27,7 @@ function Experience() {
         {
             company: "GEICO",
             img: Geico,
-            role: "Software Engineer Intern @",
+            role: "Software Engineer Intern",
             date: "Jun 2024 - Aug 2024",
             desc: [
                 "◇ Created a tool for managing and manipulating documents to streamline availability and incident management",
@@ -44,7 +39,7 @@ function Experience() {
         {
             company: "U.S. Army Research Lab",
             img: ARL,
-            role: "Neuromorphic Computing Researcher @",
+            role: "Neuromorphic Computing Researcher",
             date: "May 2023 - May 2024",
             desc: [
                 "◇ Optically perturb and computationally model living neural network dynamics for a hybrid computing I/O platform", 
@@ -55,7 +50,7 @@ function Experience() {
         {
             company: "University of Maryland",
             img: UMDCS,
-            role: "Computer Science Teaching Assistant @",
+            role: "Computer Science Teaching Assistant",
             date: "Jan 2024 - Dec 2024",
             desc: [
                 "◇ CMSC351: Algorithms and CMSC250: Discrete Structures",
@@ -66,7 +61,7 @@ function Experience() {
         {
             company: "TAMID at Maryland",
             img: Tamid,
-            role: "Tech Consultant @",
+            role: "Tech Consultant",
             date: "Mar 2023 - May 2024",
             desc: [
                 "◇ Applied software development skills to advise tech startups as a member of a competitive business club",
@@ -76,12 +71,10 @@ function Experience() {
     ]
 
     return (
-        <div className="Experience" id="experience">
-            <div className="section">
-                <span className="section-title"> experience.py </span>
-                <p>print("click on each card for more info")</p>
-                <div className="container">
-                    <div className="sidebar">
+        <div className="section" id="experience-section">
+            <h2 className="section-title"> ~/experience </h2>
+                <div className="section-content" id="job-content">
+                    <div className="job-component" id="sidebar">
                         {experiences.map((item, index) => (
                             <div
                             key={index}
@@ -91,16 +84,17 @@ function Experience() {
                         ))}
                     </div>
 
-                    <div className="job">
-                        <h3 className='jobTitle'>
-                            {experiences[item].role}{experiences[item].company}
+                    <div className="job-component" id="info">
+                        <h3 className='job-title'>
+                            {experiences[item].role} @ {experiences[item].company}
                         </h3>
-                        <p className='jobDescription'>
-                            {experiences[item].desc}
-                        </p>
+                        <div className="job-desc">
+                            {experiences[item].desc.map((d) => (
+                                <p>{d}</p>
+                            ))}
+                        </div>
                     </div>
                 </div>
-            </div>
         </div>
     );
 }
