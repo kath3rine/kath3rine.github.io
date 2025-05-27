@@ -17,12 +17,14 @@
 
     @media only screen and (max-width: 800px) {
         .Contact img {
-            height: 7vw;
-            width: 7vw;
+            height: 6vw;
+            width: 6vw;
         }
 
         .Contact {
-          width: 70%;
+          width: 60%;
+          margin-left: 20%;
+          margin-right: 20%;
         }
     }
 

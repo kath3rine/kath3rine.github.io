@@ -14,7 +14,7 @@ function Experience() {
             {
                 company: "GEICO",
                 role: "Software Engineer",
-                date: "Jul 2025 - Present",
+                date: "JUL 2025 - NOW",
                 desc: [
                     "Incoming summer 2025"
                 ]
@@ -22,7 +22,7 @@ function Experience() {
             {
                 company: "GEICO",
                 role: "Software Engineer Intern",
-                date: "Jun 2024 - Aug 2024",
+                date: "JUN 2024 - AUG 2024",
                 desc: [
                     "◇ Created a tool for managing and manipulating documents to streamline availability and incident management",
                     "◇ Implemented HTTP requests for a custom API using C# in the .NET framework for efficient interactions with CosmosDB",
@@ -35,7 +35,7 @@ function Experience() {
             {
                 company: "University of Maryland",
                 role: "Teaching Assistant",
-                date: "Jan 2024 - Dec 2024",
+                date: "JAN 2024 - DEC 2024",
                 desc: [
                     "◇ CMSC351: Algorithms and CMSC250: Discrete Structures",
                     "◇ Teach discussion sections and hold office hours to guide students and enhance content comprehension",
@@ -45,7 +45,7 @@ function Experience() {
             {
                 company: "University of Maryland",
                 role: "Research Assistant",
-                date: "Aug 2022- Dec 2022",
+                date: "AUG 2022- DEC 2022",
                 desc: [
                     "◇ @ Computational Computational Cognitive Neuroscience & Psychiatry Lab",
                     "◇ Conducted computational modeling of information processing in learning, decision-making, and episodic memory",
@@ -57,7 +57,7 @@ function Experience() {
             {
                 company: "U.S. Army Research Lab",
                 role: "Neuromorphic Computing Researcher",
-                date: "May 2023 - May 2024",
+                date: "MAY 2023 - MAY 2024",
                 desc: [
                     "◇ Optically perturb and computationally model living neural network dynamics for a hybrid computing I/O platform", 
                     "◇ Culture cells and use optogenetic inhibition and activation via SLM to form and modulate living neural networks, and monitor neuronal activity with fluorescence microscopy, calcium imaging, and image segmentation",
@@ -69,7 +69,7 @@ function Experience() {
             {
                 company: "TAMID at Maryland",
                 role: "Tech Consultant",
-                date: "Mar 2023 - May 2024",
+                date: "MAR 2023 - MAY 2024",
                 desc: [
                     "◇ Applied software development skills to advise tech startups as a member of a competitive business club",
                     "◇ Collaboratively built a full-stack app for an edutech startup, utilizing React Native for the user interface and allowing users to schedule appointments, search through a database, chat, and video conference"
@@ -88,7 +88,7 @@ function Experience() {
                             <div id="sidebar-company"
                             key={index}
                             onClick={() => handleChange(index)}>
-                                <a>{group[0].company}</a>
+                                <a className={`${item==index? 'selected' : 'not-selected'}`}>{group[0].company}</a>
                             </div>
                         ))}
                     </div>

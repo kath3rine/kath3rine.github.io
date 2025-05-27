@@ -38,7 +38,7 @@
 }
 
 #job-desc {
-    margin-top: 2%;
+    margin-top: 5%;
 }
 
 #job-desc-item, #job-date {
@@ -61,3 +61,8 @@ a:hover {
 .job-component {
     padding: 2%;
 }
+
+.selected, .selected:hover {
+    color: var(--accent);
+}
+
