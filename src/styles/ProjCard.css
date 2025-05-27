@@ -4,6 +4,11 @@ h2 {
   font-size: 5vh;
 }
 
+#proj-intro {
+  font-weight: 400;
+  margin-left: 2%;
+}
+
 #proj-tech {
   display: flex;
   font-size: 2vh;
@@ -14,7 +19,8 @@ h2 {
 label {
   padding: 2px 8px;
   border-radius: 4px;
-  margin: 3px;
+  margin-left: 3px;
+  margin-right: 3px;
   color: var(--header);
   background-color: var(--background);
   padding: 5px 10px 5px 10px;
@@ -58,7 +64,7 @@ label {
     font-family: "Outfit", sans-serif;
     font-weight: 400;
     
-    p {
+    li {
       margin: 10px;
     }
   }
@@ -78,15 +84,14 @@ img {
     margin: 2%;
   }
 
-
-  @media only screen and (max-width: 1400px) and (min-width: 950px) {
-    .card-back p {
-      font-size: 2.4vh;
+  @media only screen and (max-width: 1300px) and (min-width: 1000px) {
+    .card-back li {
+      font-size: 2.5vh;
     }
   }
 
-  @media only screen and (max-width: 900px) and (min-width: 650px) {
-    .card-back p {
-      font-size: 2.4vh;
+  @media only screen and (max-width: 1000px) and (min-width: 650px) {
+    .card-back li {
+      font-size: 2.5vh;
     }
   }
