@@ -25,7 +25,7 @@ function ProjCard({card}) {
       </div>
       <div className="card-back">
         {card.desc.map((x) => (
-          <p>{x}</p>
+          <li>{x}</li>
         ))}
       </div>
     </div>

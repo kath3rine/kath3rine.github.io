@@ -3,14 +3,14 @@
 
 :root {
   --background: #2e3784;
-  --text: #7d83b1;
+  --text: #858cbe;
   --header: rgb(190, 187, 238);
   --accent: #8ae4e0;
   --detail: #3a4290;
-  --detail2: #40499b;
+  --detail2: #4851a3;
 }
 
-p, a {
+p, a, li {
   font-size: 3vh;
   color: var(--text);
 }
@@ -36,3 +36,4 @@ h1, h2, h3 {
   font-size: 6vh;
   font-family: "Courier Prime", monospace;
 }
+
