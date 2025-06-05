@@ -1,32 +1,30 @@
-.Contact {
-    margin-top: 5%;
-    width: 20%;
+#contact {
+  margin-top: 2%;
+  width: 100%;
+  height: 20%;
 }
-    .Contact img {
-      filter: invert(100%);
-      opacity: 0.4;
-      height: 15%;
-      width: 15%;
-      border-radius: 50%;
-      margin-right: 10%;
-    }
 
-    .Contact img:hover {
-      opacity: 1;
-    }
+#contact img {
+  filter: invert(100%);
+  opacity: 0.4;
+  height: 3vh;
+  width: 3vh;
+  margin-right: 5%;
+  margin-left: 0px;
+}
 
-    @media only screen and (max-width: 800px) {
-        .Contact img {
-            height: 6vw;
-            width: 6vw;
-        }
+#contact img:hover {
+  opacity: 1;
+}
 
-        .Contact {
-          width: 60%;
-          margin-left: 20%;
-          margin-right: 20%;
-        }
-    }
+@media only screen and (max-width: 800px) {
+
+  #contact {
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+}
 
 
   

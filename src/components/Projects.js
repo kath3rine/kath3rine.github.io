@@ -1,30 +1,70 @@
 import '../styles/Projects.css'
-import ProjCard from './ProjCard.js';
+import React, { useState } from 'react';
 import Tinderfy from '../images/tinderfy.png'
 import Impostar from '../images/impostar.JPG'
 import Portfolio from '../images/portfolio.png'
+
+function Card({card}) {
+    const [isFlipped, setIsFlipped] = useState(false);
+  
+    const handleClick = () => {
+      setIsFlipped(!isFlipped);
+    };
+  
+    return (
+      <div className={`card ${isFlipped ? 'flipped' : ''}`} onClick={handleClick}>
+        <div className="card-front">
+          <img id="proj-img" src={card.img}/>
+          <h2>{card.title}</h2>
+  
+          <div className="proj-tech">
+            <label id="category-label">{card.category}</label>
+            {card.tech.map((x) => (
+              <label id="tech-label">{x}</label>
+            ))}
+            
+          </div>
+            
+          <div className='proj-tech'>
+            {card.languages.map((x) => (
+              <label id="language-label">{x}</label>
+            ))}
+          </div>
+  
+          <a href={card.link}>LINK</a>
+        </div>
+        <div className="card-back">
+          {card.desc.map((x) => (
+            <li>{x}</li>
+          ))}
+        </div>
+      </div>
+    );
+  }
 
 function Projects() {
     const projects = [
         {
             img: Tinderfy,
             title: "Tinderfy",
-            tech: ["Flask", "Python", "HTML", "CSS"],
+            category: "Web App",
+            tech: ["Flask", "React", "API"],
+            languages: ["HTML/CSS", "JavaScript", "Python"],
             desc: [
-                "Quasi-satirical fake dating app centered around music taste compatibility assessment",
-                "Developed simulated Tinder profiles showing joint music recommendations, favorite artists/genres, and shared content",
-                "Utilized Pandas and Spotify API for user authorization, data scraping, processing, and analysis",
-                "Used decision trees from scikit-learn to calculate the similarity of users’ favorite songs, enhancing the algorithm’s accuracy"
+                "Full-stack web app displaying a user’s Spotify analytics in a dating app profile",
+                "Integrated Spotify and LastFM API to display and compare user stats like top songs, shared artists and genres, and uniqueness, and shared content",
+                "Implemented recommendations and compatibility scoring to match users based on their music taste"
             ],
-            link: "https://www.github.com/kath3rine/tinderfy"
+            link: "https://www.github.com/kath3rine/tinderfy-v2"
         },
         {
             img: Impostar,
             title: "Impost-AR",
-            tech: ["Unity", "C#", "Maya"],
+            category: "Augmented Reality",
+            tech: ["Unity", "Maya"],
+            languages: ["C#"],
             desc: [
-                "Collaborative senior capstone project",
-                "Multiplayer augmented reality escape room / scavenger hunt based loosely off 'And Then There Were None'",
+                "Multiplayer augmented reality escape room / scavenger hunt based on the novel 'And Then There Were None'",
                 "Players solve virtual and physical puzzles to uncover clues, stay alive, and figure out which player is the imposter",
                 "Implemented networking with Photon Engine for seamless multiplayer interaction",
                 "Designed various engaging blended-reality mini-games and integrated them into the gameplay"
@@ -34,10 +74,12 @@ function Projects() {
         {
             img: Portfolio,
             title: "Portfolio Site",
-            tech: ["React", "HTML", "CSS", "JavaScript"],
+            category: "Website",
+            tech: ["React", "Adobe Fresco"],
+            languages: ["HTML/CSS", "JavaScript"],
             desc: [
-                "This website! Designed and coded an engaging portfolio website from scratch, featuring more projects and info",
-                "Implemented responsiveness for a smoother user experience, and used component-based architecture for scalability"
+                "This website!",
+                "Designed, illustrated, and coded from scratch"
             ],
             link: "https://www.kath3rine.github.io"
         }
@@ -49,7 +91,7 @@ function Projects() {
                 <p id="proj-intro">print("click on each project card to learn more")</p>
                 <div id="projects-content">
                 {projects.map((card) => (
-                    <ProjCard card={card} />
+                    <Card card={card} />
                 ))}
                 </div>
             </div>

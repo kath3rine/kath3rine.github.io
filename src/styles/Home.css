@@ -7,6 +7,7 @@
 
 #home-left {
   flex: 2;
+  padding-right: 5%;
 }
 
 #home-right {
@@ -23,22 +24,26 @@
 }
 
 #home-header {
-  animation: slide-in 2s;
+  animation: slide-in 1s;
   font-family: "Courier Prime", monospace;
+}
 
-  p {
-    color: var(--header);
-    font-size: 4vh;
-  }
+#home-header p {
+  color: var(--header);
+  font-size: 4vh;
 }
 
 #home-content {
-  animation: slide-in2 4s;
+  animation: slide-in2 2s;
   
 }
 
 #intro {
   color: var(--text);
+}
+
+#intro li {
+  font-size: 3vh;
 }
   
 #buttons {
@@ -50,6 +55,7 @@
 }
 
 #button a {
+  font-size: 3vh;
   color: var(--header);
   font-family: "Courier Prime", monospace;
 }
@@ -74,7 +80,7 @@
 
 @keyframes slide-in2 {
   from {
-    transform: translateX(-200%);
+    transform: translateX(-100%);
   }
   to {
     transform: translateX(0%);

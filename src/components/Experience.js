@@ -38,8 +38,8 @@ function Experience() {
                 date: "JAN 2024 - DEC 2024",
                 desc: [
                     "CMSC351: Algorithms and CMSC250: Discrete Structures",
-                    "Teach discussion sections and hold office hours to guide students and enhance content comprehension",
-                    "Grade and write assignments for 200-600 students covering logic, proofs, probability, graphs, complexity, etc."
+                    "Taught discussion sections and held office hours to guide students and enhance content comprehension",
+                    "Graded and wrote assignments for 200-600 students covering logic, proofs, probability, graphs, complexity, and more."
                 ]
             }, 
             {
@@ -59,9 +59,9 @@ function Experience() {
                 role: "Neuromorphic Computing Researcher",
                 date: "MAY 2023 - MAY 2024",
                 desc: [
-                    "Optically perturb and computationally model living neural network dynamics for a hybrid computing I/O platform", 
-                    "Culture cells and use optogenetic inhibition and activation via SLM to form and modulate living neural networks, and monitor neuronal activity with fluorescence microscopy, calcium imaging, and image segmentation",
-                    "Leverage Python, TypeScript, Docker, web sockets, and high-performance computing to create an app enabling custom photostimulation and real-time image and signal analysis on a digital micromirror device"
+                    "Optically perturbed and computationally modeled living neural network dynamics for a hybrid computing I/O platform", 
+                    "Cultured cells and used optogenetic inhibition and activation via SLM to form and modulate living neural networks, and monitor neuronal activity with fluorescence microscopy, calcium imaging, and image segmentation",
+                    "Created app enabling custom photostimulation and real-time image and signal analysis on a digital micromirror device using Python, TypeScript, Docker, web sockets, and high-performance computing"
                 ]
             }
         ],
@@ -72,7 +72,8 @@ function Experience() {
                 date: "MAR 2023 - MAY 2024",
                 desc: [
                     "Applied software development skills to advise tech startups as a member of a competitive business club",
-                    "Collaboratively built a full-stack app for an edutech startup, utilizing React Native for the user interface and allowing users to schedule appointments, search through a database, chat, and video conference"
+                    "Collaboratively built a full-stack app for an edutech startup, utilizing React Native for the user interface",
+                    "Implemented appointment scheduling, database search, chat, and video conference features"
                 ]
             }
         ]
@@ -88,14 +89,16 @@ function Experience() {
                             <div id="sidebar-company"
                             key={index}
                             onClick={() => handleChange(index)}>
-                                <li className={`${item==index? 'selected' : 'not-selected'}`}><a >{group[0].company}</a></li>
+                                <p className={`${item==index? 'selected' : 'not-selected'}`}>
+                                    {index + 1}. {group[0].company}
+                                </p>
                             </div>
                         ))}
                     </div>
 
                     <div className="job-component" id="job-info">
-                        {experiences[item].map((x) => (
-                            <div id="sub-item"> 
+                        {experiences[item].map((x, i) => (
+                            <div className={`${i === experiences[item].length - 1 ? 'sub-item' : 'sub-item-border'}`} id="sub-item"> 
                                 <div id='title'>
                                     <span id="role">{x.role} </span> <span id="company"> @ {x.company}</span>
                                     <p id="job-date">{x.date}</p>
