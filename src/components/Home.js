@@ -1,13 +1,10 @@
 import '../styles/Home.css';
 import '../styles/Global.css';
+import Contact from './widgets/Contact.js'
 import Katherine from '../images/katherine.png';
-import Contact from './Contact.js'
+import Bunny from './widgets/Scene.js'
 
 function Home() {
-  const bio = [
-    "Software Engineer | ",
-    "B.S. Computer Science + B.S. Immersive Media Design"
-  ]
 
   const buttons = [
     {
@@ -18,6 +15,7 @@ function Home() {
       "link": "#projects", 
       "text": "projects"
     }
+  
   ]
 
   return (
@@ -30,11 +28,7 @@ function Home() {
 
           <div id="home-content">
             <div id="intro">
-            <p> I am a software engineer at GEICO and recent graduate of the University of Maryland, where I earned a B.S. in Computer Science and a B.S. in Immersive Media Design: Computing.</p>
-              {/* {bio.map((item) => (
-                <span>{item} </span>
-              ))} */}
-              
+              <p> I'm a software engineer at GEICO and recent graduate of the University of Maryland, where I earned a B.S. in Computer Science and a B.S. in Immersive Media Design: Computing.</p>
             </div>
             
             <div id="buttons">
@@ -44,13 +38,17 @@ function Home() {
                 </div>
               ))}
             </div>
-
-            <Contact/>
+            <Contact />
+            <div id="blender">
+            <Bunny/>
+            </div>
+            
+            
           </div>
         </div>
 
         <div id="home-right">
-            <img id="pfp" src={Katherine}/>
+          <img id="pfp" src={Katherine}/>
         </div>
     </div>
   );

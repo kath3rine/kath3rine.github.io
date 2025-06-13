@@ -1,7 +1,6 @@
 import Home from './components/Home.js'
 import Experience from './components/Experience.js'
 import Projects from './components/Projects.js'
-import About from './components/About.js'
 
 function App() {
   return (
@@ -9,7 +8,6 @@ function App() {
       <Home />
       <Experience />
       <Projects />
-      {/* <About /> */}
     </div>
   );
 }
