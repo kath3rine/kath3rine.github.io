@@ -1,21 +1,24 @@
 {
   "files": {
-    "main.css": "/static/css/main.42be6a4e.css",
-    "main.js": "/static/js/main.96c5b687.js",
+    "main.css": "/static/css/main.433b6d4e.css",
+    "main.js": "/static/js/main.ed78e3ea.js",
     "static/js/453.1f6f2025.chunk.js": "/static/js/453.1f6f2025.chunk.js",
+    "static/media/visualizer.png": "/static/media/visualizer.78568e90a07b7d1529b9.png",
+    "static/media/animalfarm.png": "/static/media/animalfarm.884c0d6fc04882a0376d.png",
     "static/media/impostar.JPG": "/static/media/impostar.2ab6fd0afdfad263eae0.JPG",
-    "static/media/tinderfy.png": "/static/media/tinderfy.cee02b7988afffbf0904.png",
+    "static/media/tinderfy.png": "/static/media/tinderfy.7343521c6dd4e9de82e1.png",
     "static/media/katherine.png": "/static/media/katherine.b25fe56e11c54932cd1c.png",
     "static/media/portfolio.png": "/static/media/portfolio.f764c878ba6f8c29e57d.png",
+    "static/media/resume.png": "/static/media/resume.4b034118132558de0d22.png",
     "static/media/linkedin.png": "/static/media/linkedin.ba884e1f9ad4362348c1.png",
     "static/media/email.png": "/static/media/email.4b1be4199ea393c99bc4.png",
     "index.html": "/index.html",
-    "main.42be6a4e.css.map": "/static/css/main.42be6a4e.css.map",
-    "main.96c5b687.js.map": "/static/js/main.96c5b687.js.map",
+    "main.433b6d4e.css.map": "/static/css/main.433b6d4e.css.map",
+    "main.ed78e3ea.js.map": "/static/js/main.ed78e3ea.js.map",
     "453.1f6f2025.chunk.js.map": "/static/js/453.1f6f2025.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.42be6a4e.css",
-    "static/js/main.96c5b687.js"
+    "static/css/main.433b6d4e.css",
+    "static/js/main.ed78e3ea.js"
   ]
 }
