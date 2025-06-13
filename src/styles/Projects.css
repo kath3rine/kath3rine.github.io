@@ -23,34 +23,32 @@
 
   h2 { 
     font-size: 5vh;
+    margin: 0px;
+    padding: 0px;
   }
   
   #proj-intro {
     font-weight: 400;
     margin-left: 2%;
+    color: var(--header);
   }
   
-  .proj-tech {
+  #tech {
     display: flex;
+    flex-wrap: wrap;
     font-size: 2vh;
     justify-content: center;
+    padding: 5% 2% 0% 2%;
   }
   
   label {
-    padding: 2px 8px;
     border-radius: 4px;
     margin: 3px;
-    padding: 5px 10px 5px 10px;
-  }
-
-  #category-label {
-    border: 1px var(--header) solid;
-    color: var(--header);
-  }
-
-  #tech-label, #language-label {
+    padding: 3px 10px 3px 10px;
+    font-family: "Outfit", sans-serif;
     border: 1px var(--text) solid;
     color: var(--text);
+    font-weight: 400;
   }
   
   .card {
@@ -83,6 +81,10 @@
       h2 {
         margin-top: 1%;
         margin-bottom: 2%;
+      }
+
+      a:hover {
+        color: var(--header);
       }
     }
     

@@ -16,23 +16,20 @@ function Card({card}) {
         <div className="card-front">
           <img id="proj-img" src={card.img}/>
           <h2>{card.title}</h2>
+          <p id="category">
+            {card.category} | <a href={card.link}>LINK</a>
+          </p>
   
-          <div className="proj-tech">
-            <label id="category-label">{card.category}</label>
+          <div id="tech">
             {card.tech.map((x) => (
               <label id="tech-label">{x}</label>
             ))}
-            
-          </div>
-            
-          <div className='proj-tech'>
             {card.languages.map((x) => (
               <label id="language-label">{x}</label>
             ))}
           </div>
-  
-          <a href={card.link}>LINK</a>
         </div>
+
         <div className="card-back">
           {card.desc.map((x) => (
             <li>{x}</li>
@@ -64,10 +61,10 @@ function Projects() {
             tech: ["Unity", "Maya"],
             languages: ["C#"],
             desc: [
-                "Multiplayer augmented reality escape room / scavenger hunt based on the novel 'And Then There Were None'",
-                "Players solve virtual and physical puzzles to uncover clues, stay alive, and figure out which player is the imposter",
+                "Senior Capstone: Multiplayer augmented reality escape room and scavenger hunt based on the novel 'And Then There Were None'",
+                "Players solve virtual and physical puzzles to uncover clues and figure out which player is the imposter",
                 "Implemented networking with Photon Engine for seamless multiplayer interaction",
-                "Designed various engaging blended-reality mini-games and integrated them into the gameplay"
+                "Designed and implemented a variety of mixed-reality mini-games with custom scripts and models, leveraging Vuforia (image tracking, plane detection) to blend virtual and physical aspects"
             ],
             link: "https://sites.google.com/terpmail.umd.edu/emma-and-katherine-capstone"
         },
@@ -90,9 +87,9 @@ function Projects() {
                 <h1 className="section-title"> ~/projects </h1>
                 <p id="proj-intro">print("click on each project card to learn more")</p>
                 <div id="projects-content">
-                {projects.map((card) => (
-                    <Card card={card} />
-                ))}
+                  {projects.map((card) => (
+                      <Card card={card} />
+                  ))}
                 </div>
             </div>
     </div>

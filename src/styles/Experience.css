@@ -94,6 +94,7 @@ a {
     #job-sidebar {
         border-right: none;
         margin-left: 2%;
+        padding-bottom: 5%;
     }
 
     #sidebar-company {
@@ -101,6 +102,6 @@ a {
     }
 
     #job-info {
-        padding-top: 5%;
+        padding-top: 7%;
     }
   }

@@ -7,11 +7,15 @@ function Buttons() {
   const buttons = [
     {
       "link": "#experience", 
-      "text": "cd ~/experience"
+      "text": "experience"
     },
     {
       "link": "#projects", 
-      "text": "cd ~/projects"
+      "text": "projects"
+    },
+    {
+      "link": "#about", 
+      "text": "about"
     }
   ]
 
@@ -19,7 +23,7 @@ function Buttons() {
     <div id="buttons">
       {buttons.map((button) => (
         <div id="button">
-          <a href={button.link}> {'>>'} {button.text}</a>
+          <a href={button.link}> {'>> cd ~/'}{button.text}</a>
         </div>
       ))}
     </div>
@@ -28,8 +32,8 @@ function Buttons() {
 
 function Home() {
   const bio = [
-    "Software Engineer @ GEICO",
-    "B.S. Computer Science + B.S. Immersive Media Design from University of Maryland"
+    "Software Engineer | ",
+    "B.S. Computer Science + B.S. Immersive Media Design"
   ]
 
   return (
@@ -43,11 +47,13 @@ function Home() {
           <div id="home-content">
             <div id="intro">
               {bio.map((item) => (
-                <li>{item}</li>
+                <span>{item} </span>
               ))}
+              
             </div>
-            <Contact/>
+            
             <Buttons/>
+            <Contact/>
           </div>
         </div>
 

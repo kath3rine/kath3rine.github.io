@@ -1,5 +1,4 @@
 import '../styles/Experience.css';
-import '../styles/Global.css';
 import React, { useState } from 'react';
 
 function Experience() {
@@ -60,7 +59,8 @@ function Experience() {
                 date: "MAY 2023 - MAY 2024",
                 desc: [
                     "Optically perturbed and computationally modeled living neural network dynamics for a hybrid computing I/O platform", 
-                    "Cultured cells and used optogenetic inhibition and activation via SLM to form and modulate living neural networks, and monitor neuronal activity with fluorescence microscopy, calcium imaging, and image segmentation",
+                    "Cultured cells and used optogenetic inhibition and activation via SLM to form and modulate living neural networks",
+                    "Monitored neuronal activity using fluorescence microscopy, calcium imaging, and image segmentation",
                     "Created app enabling custom photostimulation and real-time image and signal analysis on a digital micromirror device using Python, TypeScript, Docker, web sockets, and high-performance computing"
                 ]
             }
