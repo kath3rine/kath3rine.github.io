@@ -7,7 +7,7 @@ function Model({ url }) {
   return <primitive object={scene} />;
 }
 
-function Blender() {
+function Scene() {
   return (
     <Canvas>
       <ambientLight intensity={0.5} />
@@ -18,4 +18,4 @@ function Blender() {
   );
 }
 
-export default Blender;
+export default Scene;

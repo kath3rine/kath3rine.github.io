@@ -42,7 +42,7 @@ function Projects() {
             img: Tinderfy,
             title: "Tinderfy",
             category: "Web App",
-            tech: ["Flask", "React", "API", "HTML/CSS", "JavaScript", "Python"],
+            tech: ["Flask", "React", "API", "Python", "HTML/CSS", "JavaScript"],
             desc: [
                 "Full-stack web app displaying a user’s Spotify analytics in a dating app profile",
                 "Integrated Spotify and LastFM API to display and compare user stats like top songs, shared artists and genres, and uniqueness, and shared content",
@@ -55,7 +55,7 @@ function Projects() {
             img: Impostar,
             title: "Impost-AR",
             category: "Augmented Reality",
-            tech: ["Unity", "Maya", "C#"],
+            tech: ["Unity", "C#", "Maya"],
             desc: [
                 "Senior Capstone: Multiplayer augmented reality escape room and scavenger hunt based on the novel 'And Then There Were None'",
                 "Players solve virtual and physical puzzles to uncover clues and figure out which player is the imposter",
@@ -66,12 +66,12 @@ function Projects() {
         },
         {
             img: Portfolio,
-            title: "Portfolio Site",
+            title: "Portfolio",
             category: "Website",
-            tech: ["React", "Adobe Fresco", "JavaScript", "HTML/CSS"],
+            tech: ["React", "Adobe Fresco", "Blender", "HTML/CSS", "JavaScript"],
             desc: [
-                "This website!",
-                "Designed, illustrated, and coded from scratch"
+                "This website! Designed and coded entirely from scratch",
+                "Created illustrations and interactive 3D models myself and integrated them with ThreeJS to make the website more fun and engaging "
             ]
         },
         {
@@ -80,7 +80,7 @@ function Projects() {
             category: "Interactive Art",
             tech: ["TouchDesigner"],
             desc: [
-                "Moving 3D fractal that reacts (i.e. changes speed, color, shape) to a song (rhythm, tempo, pitch, etc.) of the user's choosing"
+                "Moving 3D fractal that changes its appearance in reaction to the rhythm and pitch of a song of the user's choosing"
             ],
             demo: "https://drive.google.com/file/d/1BjeBTGx6p-eLK-zijbGXJCG2KZDsEStR/view?usp=sharing"
         },

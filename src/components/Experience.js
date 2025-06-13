@@ -1,6 +1,6 @@
 import '../styles/Experience.css';
 import React, { useState } from 'react';
-import experiences from './ExperienceData.json'
+import experiences from './widgets/ExperienceData.json'
 function Experience() {
     const [item, setItem] = useState(0);
 
@@ -30,7 +30,7 @@ function Experience() {
                             <div className={`${i === experiences[item].length - 1 ? 'sub-item' : 'sub-item-border'}`} id="sub-item"> 
                                 <div id='title'>
                                     <span id="role">{x.role} </span> <span id="company"> @ {x.company}</span>
-                                    <p id="job-date">{x.date}</p>
+                                    <p>{x.date}</p>
                                 </div>
 
                                 <div id="job-desc">
