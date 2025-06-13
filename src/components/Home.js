@@ -1,13 +1,12 @@
 import '../styles/Home.css';
 import '../styles/Global.css';
 import Katherine from '../images/katherine.png';
-import Contact from './Contact.js'
+import Email from '../images/email.png';
+import Linkedin from '../images/linkedin.png';
+import Github from '../images/github.png';
+import Resume from '../images/resume.png';
 
 function Home() {
-  const bio = [
-    "Software Engineer | ",
-    "B.S. Computer Science + B.S. Immersive Media Design"
-  ]
 
   const buttons = [
     {
@@ -20,6 +19,25 @@ function Home() {
     }
   ]
 
+  const icons = [
+    {
+        link: "https://linkedin.com/in/kli17",
+        image: Linkedin
+    },
+    {
+        link: "https://github.com/kath3rine",
+        image: Github
+    },
+    {
+        link: "https://docs.google.com/document/d/1TuWZ4J4QxJq75TsXh6pFEGCPtvYuIqK6waOykGUWQtI/edit?usp=sharing",
+        image: Resume
+    },
+    {
+        link: "mailto:kli17@terpmail.umd.edu",
+        image: Email
+    },
+]
+
   return (
     <div className="section" id="home">
         <div id="home-left">
@@ -30,11 +48,7 @@ function Home() {
 
           <div id="home-content">
             <div id="intro">
-            <p> I am a software engineer at GEICO and recent graduate of the University of Maryland, where I earned a B.S. in Computer Science and a B.S. in Immersive Media Design: Computing.</p>
-              {/* {bio.map((item) => (
-                <span>{item} </span>
-              ))} */}
-              
+              <p> I am a software engineer at GEICO and recent graduate of the University of Maryland, where I earned a B.S. in Computer Science and a B.S. in Immersive Media Design: Computing.</p>
             </div>
             
             <div id="buttons">
@@ -45,7 +59,13 @@ function Home() {
               ))}
             </div>
 
-            <Contact/>
+            <div id="contact">
+            {icons.map((icon) => (
+                <a href={icon.link}>
+                    <img src={icon.image}></img>
+                </a>
+            ))}
+        </div>
           </div>
         </div>
 

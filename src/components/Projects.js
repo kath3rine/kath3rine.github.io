@@ -18,9 +18,7 @@ function Card({card}) {
         <div className="card-front">
           <img id="proj-img" src={card.img}/>
           <h2>{card.title}</h2>
-          <p id="category">
-            {card.category} {card.link ? <a href={card.link}> (link)</a> : ""}
-          </p>
+          <p id="category">{card.category} {card.demo ? <a href={card.demo}> (demo)</a> : ""} {card.more ? <a href={card.more}> (more)</a> : ""} </p>
   
           <div id="tech">
             {card.tech.map((x) => (
@@ -50,7 +48,8 @@ function Projects() {
                 "Integrated Spotify and LastFM API to display and compare user stats like top songs, shared artists and genres, and uniqueness, and shared content",
                 "Implemented recommendations and compatibility scoring to match users based on their music taste"
             ],
-            link: "https://www.github.com/kath3rine/tinderfy-v2"
+            demo: "https://drive.google.com/file/d/14A3Os4FH-SMW-iZzdGd18q14dg02a5Lr/view?usp=drive_link",
+            more: "https://www.github.com/kath3rine/tinderfy-v2"
         },
         {
             img: Impostar,
@@ -63,7 +62,7 @@ function Projects() {
                 "Implemented networking with Photon Engine for seamless multiplayer interaction",
                 "Designed and implemented a variety of mixed-reality mini-games with Vuforia (image tracking, plane detection) and custom scripts and models"
             ],
-            link: "https://sites.google.com/terpmail.umd.edu/emma-and-katherine-capstone"
+            more: "https://sites.google.com/terpmail.umd.edu/emma-and-katherine-capstone"
         },
         {
             img: Portfolio,
@@ -81,19 +80,19 @@ function Projects() {
             category: "Interactive Art",
             tech: ["TouchDesigner"],
             desc: [
-                "Moving 3D fractal that changes appearance (speed, color, shape) based on a song (rhythm, tempo, pitch) of the user's choosing"
+                "Moving 3D fractal that reacts (i.e. changes speed, color, shape) to a song (rhythm, tempo, pitch, etc.) of the user's choosing"
             ],
-            link: ""
+            demo: "https://drive.google.com/file/d/1BjeBTGx6p-eLK-zijbGXJCG2KZDsEStR/view?usp=sharing"
         },
         {
             img: Animalfarm,
             title: "Animal Farm",
-            category: "3D Video Game",
+            category: "Video Game",
             tech: ["Unity", "C#", "Maya"],
             desc: [
-                "Satirical 3D game where the user must manage a successful farm, intended to educate on unethical farming"
+                "Satirical 3D game where the user tries to manage a profitable farm, intended to educate them on unethical farming"
             ],
-            link: "https://drive.google.com/file/d/1h9jGdls9DGvix7wGnakzJO5dDD5Mo2Rg/view?resourcekey"
+            demo: "https://drive.google.com/file/d/1h9jGdls9DGvix7wGnakzJO5dDD5Mo2Rg/view?resourcekey"
         }
     ]
   return (

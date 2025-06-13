@@ -1,0 +1,70 @@
+[
+    [
+        {
+            "company": "GEICO",
+            "role": "Software Engineer",
+            "date": "JUL 2025 - PRESENT",
+            "desc": [
+                "Incoming summer 2025"
+            ]
+        },
+        {
+            "company": "GEICO",
+            "role": "Software Engineer Intern",
+            "date": "JUN 2024 - AUG 2024",
+            "desc": [
+                "Created a tool for managing and manipulating documents to streamline availability and incident management, improving site reliability",
+                "Implemented HTTP requests for a custom API using C# in the .NET framework for efficient interactions with CosmosDB",
+                "Developed the user interface with React TypeScript, customizable for any user’s specific needs",
+                "Incorporated error-handling mechanisms to reduce human error and environmental misconfiguration"
+            ]
+        }
+    ],
+    [
+        {
+            "company": "University of Maryland",
+            "role": "Teaching Assistant",
+            "date": "JAN 2024 - DEC 2024",
+            "desc": [
+                "Algorithms (CMSC351) and Discrete Math (CMSC250)",
+                "Taught discussion sections and held office hours to guide students and enhance content comprehension",
+                "Graded and wrote assignments for 200-600 students covering logic, proofs, probability, graphs, complexity, and more."
+            ]
+        }, 
+        {
+            "company": "University of Maryland",
+            "role": "Research Assistant",
+            "date": "AUG 2022- DEC 2022",
+            "desc": [
+                "@ Computational Computational Cognitive Neuroscience & Psychiatry Lab",
+                "Conducted computational modeling of information processing in learning, decision-making, and episodic memory",
+                "Processed EEG data from recognition memory tasks and developed machine learning classifiers in Python with scikit-learn and TensorFlow to extract relevant features"
+            ]
+        }
+    ],
+    [
+        {
+            "company": "U.S. Army Research Lab",
+            "role": "Research Intern",
+            "date": "MAY 2023 - MAY 2024",
+            "desc": [
+                "Neuromorphic Computing Group @ Dynamics of Living Systems Lab",
+                "Optically perturbed and computationally modeled living neural network dynamics for a hybrid computing I/O platform", 
+                "Cultured cells and used optogenetic inhibition and activation via spatial light modulation to form and modulate living neural networks; monitored activity using fluorescence microscopy, calcium imaging, and image segmentation",
+                "Created app enabling custom photostimulation and real-time image and signal analysis on a digital micromirror device using Python, TypeScript, Docker, web sockets, and high-performance computing"
+            ]
+        }
+    ],
+    [
+        {
+            "company": "TAMID at Maryland",
+            "role": "Tech Consultant",
+            "date": "MAR 2023 - MAY 2024",
+            "desc": [
+                "Applied software development skills to advise tech startups as a member of a competitive business club",
+                "Collaboratively built a full-stack app for an edutech startup, utilizing React Native for the user interface",
+                "Implemented appointment scheduling, database search, chat, and video conference features"
+            ]
+        }
+    ]
+]
