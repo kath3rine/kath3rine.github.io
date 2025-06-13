@@ -76,11 +76,11 @@ a {
 
 @media only screen and (max-width: 700px) {
     #title span {
-      font-size: 3vh;
+      font-size: 3.5vw;
     }
 
     li {
-        font-size: 2.5vh;
+        font-size: 3vw;
     }
 
     #job-info {

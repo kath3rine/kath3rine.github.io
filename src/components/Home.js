@@ -3,7 +3,12 @@ import '../styles/Global.css';
 import Katherine from '../images/katherine.png';
 import Contact from './Contact.js'
 
-function Buttons() {
+function Home() {
+  const bio = [
+    "Software Engineer | ",
+    "B.S. Computer Science + B.S. Immersive Media Design"
+  ]
+
   const buttons = [
     {
       "link": "#experience", 
@@ -12,28 +17,7 @@ function Buttons() {
     {
       "link": "#projects", 
       "text": "projects"
-    },
-    {
-      "link": "#about", 
-      "text": "about"
     }
-  ]
-
-  return(
-    <div id="buttons">
-      {buttons.map((button) => (
-        <div id="button">
-          <a href={button.link}> {'>> cd ~/'}{button.text}</a>
-        </div>
-      ))}
-    </div>
-  );
-}
-
-function Home() {
-  const bio = [
-    "Software Engineer | ",
-    "B.S. Computer Science + B.S. Immersive Media Design"
   ]
 
   return (
@@ -46,13 +30,21 @@ function Home() {
 
           <div id="home-content">
             <div id="intro">
-              {bio.map((item) => (
+            <p> I am a software engineer at GEICO and recent graduate of the University of Maryland, where I earned a B.S. in Computer Science and a B.S. in Immersive Media Design: Computing.</p>
+              {/* {bio.map((item) => (
                 <span>{item} </span>
-              ))}
+              ))} */}
               
             </div>
             
-            <Buttons/>
+            <div id="buttons">
+              {buttons.map((button) => (
+                <div id="button">
+                  <a href={button.link}> {'>> cd ~/'}{button.text}</a>
+                </div>
+              ))}
+            </div>
+
             <Contact/>
           </div>
         </div>

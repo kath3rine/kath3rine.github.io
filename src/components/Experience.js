@@ -1,6 +1,5 @@
 import '../styles/Experience.css';
 import React, { useState } from 'react';
-
 function Experience() {
     const [item, setItem] = useState(0);
 
@@ -13,7 +12,7 @@ function Experience() {
             {
                 company: "GEICO",
                 role: "Software Engineer",
-                date: "JUL 2025 - NOW",
+                date: "JUL 2025 - PRESENT",
                 desc: [
                     "Incoming summer 2025"
                 ]
@@ -23,7 +22,7 @@ function Experience() {
                 role: "Software Engineer Intern",
                 date: "JUN 2024 - AUG 2024",
                 desc: [
-                    "Created a tool for managing and manipulating documents to streamline availability and incident management",
+                    "Created a tool for managing and manipulating documents to streamline availability and incident management, improving site reliability",
                     "Implemented HTTP requests for a custom API using C# in the .NET framework for efficient interactions with CosmosDB",
                     "Developed the user interface with React TypeScript, customizable for any user’s specific needs",
                     "Incorporated error-handling mechanisms to reduce human error and environmental misconfiguration"
@@ -48,7 +47,7 @@ function Experience() {
                 desc: [
                     "@ Computational Computational Cognitive Neuroscience & Psychiatry Lab",
                     "Conducted computational modeling of information processing in learning, decision-making, and episodic memory",
-                    "Processed EEG data from recognition memory tasks and developed machine learning classifiers in Python with scikit-learn and TensorFlow to extract relevant features, achieving an ~80% accuracy rate in predicting subjects’ responses"
+                    "Processed EEG data from recognition memory tasks and developed machine learning classifiers in Python with scikit-learn and TensorFlow to extract relevant features"
                 ]
             }
         ],

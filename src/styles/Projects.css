@@ -26,6 +26,10 @@
     margin: 0px;
     padding: 0px;
   }
+
+  #category, #category a {
+    font-weight: 400;
+  }
   
   #proj-intro {
     font-weight: 400;
@@ -92,11 +96,11 @@
       transform: rotateY(180deg);
       font-family: "Outfit", sans-serif;
       font-weight: 400;
-    }
 
-    .card-back li {
-      margin: 10px;
-      font-size: 2.5vh;
+      li {
+        margin: 10px;
+        font-size: 2.5vh;
+      }
     }
     
     .flipped .card-front {
