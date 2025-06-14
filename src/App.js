@@ -1,6 +1,6 @@
-import Home from './components/Home.js'
-import Experience from './components/Experience.js'
-import Projects from './components/Projects.js'
+import Home from './sections/Home.js'
+import Experience from './sections/Experience.js'
+import Projects from './sections/Projects.js'
 
 function App() {
   return (

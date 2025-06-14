@@ -1,8 +1,8 @@
 import '../styles/Home.css';
 import '../styles/Global.css';
-import Contact from './widgets/Contact.js'
+import Contact from '../components/Contact.js'
 import Katherine from '../images/katherine.png';
-import Bunny from './widgets/Scene.js'
+import Bunny from '../components/Scene.js'
 
 function Home() {
 
@@ -39,16 +39,16 @@ function Home() {
               ))}
             </div>
             <Contact />
-            <div id="blender">
-            <Bunny/>
-            </div>
             
             
           </div>
         </div>
 
         <div id="home-right">
-          <img id="pfp" src={Katherine}/>
+            <div id="bunny">
+              <Bunny/>
+              <p>scroll or click + drag to move me!</p>
+            </div>
         </div>
     </div>
   );

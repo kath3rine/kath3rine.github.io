@@ -1,8 +1,8 @@
-import '../../styles/Contact.css';
-import Email from '../../images/email.png';
-import Linkedin from '../../images/linkedin.png';
-import Github from '../../images/github.png';
-import Resume from '../../images/resume.png';
+import '../styles/Contact.css';
+import Email from '../images/email.png';
+import Linkedin from '../images/linkedin.png';
+import Github from '../images/github.png';
+import Resume from '../images/resume.png';
 
 function Contact() {
     const icons = [

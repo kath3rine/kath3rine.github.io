@@ -1,6 +1,6 @@
 import '../styles/Experience.css';
 import React, { useState } from 'react';
-import experiences from './widgets/ExperienceData.json'
+import experiences from '../components/ExperienceData.json'
 function Experience() {
     const [item, setItem] = useState(0);
 

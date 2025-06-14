@@ -34,7 +34,7 @@
 
 #intro {
   color: var(--text);
-  padding-bottom: 2%;
+  padding-bottom: 5%;
   border-bottom: 1px var(--detail2) solid;
 }
 
@@ -43,7 +43,7 @@
 }
   
 #buttons {
-  padding-top: 2%;
+  padding-top: 5%;
   width: 50%;
 }
 
@@ -66,10 +66,13 @@
   height: auto;
 }
 
-#blender {
-  height: 35vh;
-  float: right;
-  margin-top: 0px;
+#bunny {
+  height: 70vh;
+
+  p {
+    margin-top: 0px;
+    font-size: 2vh;
+  }
 }
 
 @media only screen and (max-width: 700px) {
@@ -108,9 +111,13 @@
     width: 100%;
   }
 
-  #pfp {
+  #bunny {
     height: 30vh;
     width: auto;
+    
+    p {
+      margin-bottom: 5%;
+    }
   }
 
   #blender {
