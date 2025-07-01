@@ -1,7 +1,7 @@
 import '../styles/Home.css';
 import '../styles/Global.css';
 import Contact from '../components/Contact.tsx'
-import Scene from '../components/Scene.js'
+import Scene from '../components/Scene.tsx'
 import buttons from '../data/ButtonData.json'
 
 function Home() {

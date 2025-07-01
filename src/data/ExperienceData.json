@@ -13,10 +13,9 @@
             "role": "Software Engineer Intern",
             "date": "JUN 2024 - AUG 2024",
             "desc": [
-                "Created a tool for managing and manipulating documents to streamline availability and incident management, improving site reliability",
+                "Created a tool for managing and manipulating documents that improves site reliability by streamline availability and incident management",
                 "Implemented HTTP requests for a custom API using C# in the .NET framework for efficient interactions with CosmosDB",
-                "Developed the user interface with React TypeScript, customizable for any user’s specific needs",
-                "Incorporated error-handling mechanisms to reduce human error and environmental misconfiguration"
+                "Developed a customizable user interface with React TypeScript, and incorporated error-handling mechanisms to reduce human error and environmental misconfiguration"
             ]
         }
     ],

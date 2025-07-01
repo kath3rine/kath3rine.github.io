@@ -44,7 +44,7 @@
   #tech {
     display: flex;
     flex-wrap: wrap;
-    font-size: 12px;
+    font-size: 15px;
     justify-content: center;
     padding: 5px 2px 0px 2px;
   }

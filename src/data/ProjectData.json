@@ -29,7 +29,7 @@
         "img": "/projects/portfolio.png",
         "title": "Portfolio",
         "category": "Website",
-        "tech": ["React", "Blender", "HTML/CSS", "JavaScript/TypeScript"],
+        "tech": ["React", "Blender", "HTML/CSS", "TypeScript"],
         "desc": [
             "This website! Designed and coded entirely from scratch",
             "Integrated interactive custom 3D models using Blender and ThreeJS"
@@ -59,12 +59,11 @@
         "img": "/projects/j4f.png",
         "title": "Personal Blog",
         "category": "Website",
-        "tech": ["React", "HTML/CSS", "JavaScript/TypeScript"],
+        "tech": ["React", "HTML/CSS", "JavaScript"],
         "desc": [
-            "Website for my non-academic interests",
-            "Integrated interactivity using state management, animations, hooks, etc",
-            "Used recharts for data analysis and visualization"    
+            "Website for various non-academic interests",
+            "Incorporated interactive features using animations, hooks, state management, etc, and used Recharts to analyze and visualize statistics"   
         ],
-        "link": "https://kath3rine.github.io"
+        "link": "https://kath3rine.github.io/j4f"
     }
 ]
