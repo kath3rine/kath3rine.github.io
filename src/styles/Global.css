@@ -11,8 +11,12 @@
 }
 
 p, a, li {
-  font-size: 2.75vh;
+  font-size: 18px;
   color: var(--text);
+}
+
+li {
+  margin: 10px;
 }
 
 body {
@@ -33,12 +37,6 @@ h1, h2, h3 {
 .section-title {
   font-weight: 700;
   color: var(--accent);
-  font-size: 6vh;
+  font-size: 42px;
   font-family: "Courier Prime", monospace;
-}
-
-@media only screen and (max-width: 700px) {
-  .section-title {
-    font-size: 7vw;
-  }
 }

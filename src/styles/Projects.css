@@ -9,26 +9,26 @@
 
 #projects-content {
     display: grid;
-    grid-template-columns: repeat(3, minmax(250px, 1fr));
+    grid-template-columns: repeat(3, minmax(300px, 1fr));
     gap: 40px;
     margin: 20px;
   }
   
   @media only screen and (max-width: 1000px) {
     #projects-content {
-      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    }
-
-    .card-back li {
-      font-size: 3.5vw;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     }
   }
 
 
   h2 { 
-    font-size: 5vh;
+    font-size: 30px;
     margin: 0px;
     padding: 0px;
+  }
+
+  #category {
+    margin-top: 0px;
   }
 
   #category, #category a {
@@ -44,9 +44,9 @@
   #tech {
     display: flex;
     flex-wrap: wrap;
-    font-size: 2vh;
+    font-size: 12px;
     justify-content: center;
-    padding: 5% 2% 0% 2%;
+    padding: 5px 2px 0px 2px;
   }
   
   label {
@@ -87,8 +87,7 @@
       text-align: center;
   
       h2 {
-        margin-top: 1%;
-        margin-bottom: 2%;
+        margin-top: 5px;
       }
 
       a:hover {
@@ -100,11 +99,6 @@
       transform: rotateY(180deg);
       font-family: "Outfit", sans-serif;
       font-weight: 400;
-
-      li {
-        margin: 10px;
-        font-size: 2.5vh;
-      }
     }
     
     .flipped .card-front {

@@ -1,0 +1,18 @@
+[
+    {
+        "link": "https://linkedin.com/in/kli17",
+        "image": "/contact/linkedin.png"
+    },
+    {
+        "link": "https://github.com/kath3rine",
+        "image": "/contact/github.png"
+    },
+    {
+        "link": "https://docs.google.com/document/d/1TuWZ4J4QxJq75TsXh6pFEGCPtvYuIqK6waOykGUWQtI/edit?usp=sharing",
+        "image": "/contact/resume.png"
+    },
+    {
+        "link": "mailto:kli17@terpmail.umd.edu",
+        "image": "/contact/email.png"
+    }
+]

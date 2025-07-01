@@ -7,12 +7,12 @@ function Model({ url }) {
   return <primitive object={scene} />;
 }
 
-function Scene() {
+function Scene({model}) {
   return (
     <Canvas>
       <ambientLight intensity={0.5} />
       <directionalLight position={[-2, 5, 2]} intensity={1} />
-      <Model url="/stuffed-animal.glb" /> {/* Replace with your model's path */}
+      <Model url={model} />
       <OrbitControls />
     </Canvas>
   );

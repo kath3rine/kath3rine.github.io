@@ -1,8 +1,21 @@
 import '../styles/Projects.css'
-import projects from '../components/ProjectData.json'
+import projects from '../data/ProjectData.json'
 import React, { useState } from 'react';
 
-function Card({card}) {
+interface CardType {
+  img: string;
+  title: string;
+  category: string;
+  demo?: string;
+  tech: string[];
+  desc: string[];
+}
+
+interface CardProps {
+  card: CardType;
+}
+
+function Card({card} : CardProps) {
     const [isFlipped, setIsFlipped] = useState(false);
   
     const handleClick = () => {
@@ -17,7 +30,7 @@ function Card({card}) {
           <p id="category">{card.category} {card.demo ? <a href={card.demo}> (demo)</a> : ""} {card.more ? <a href={card.more}> (more)</a> : ""} </p>
   
           <div id="tech">
-            {card.tech.map((x) => (
+            {card.tech.map((x : string) => (
               <label id="tech-label">{x}</label>
             ))}
           </div>

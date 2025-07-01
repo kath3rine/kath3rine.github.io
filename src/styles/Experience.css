@@ -22,32 +22,31 @@
 #sidebar-company {
     font-family: "Courier Prime", monospace;
     color: var(--text);
-    margin-bottom: 10%;
+    margin-bottom: 30px;
     font-weight: 700;
 }
 
 #sub-item {
-    margin-bottom: 2%;
-    padding-bottom: 2%;
+    margin-bottom: 20px;
+    padding-bottom: 30px;
 }
 
 .sub-item-border {
     border-bottom: 1px var(--detail2) solid;
 }
 
+#title p {
+    margin-top: 0px;
+}
+
 span {
     font-family: "Courier Prime", monospace;
-    font-size: 4vh;
-    font-weight: 700;
+    font-size: 24px;
+    font-weight: bold;
 }
 
 #job-desc {
-    margin-top: 2%;
-}
-
-li, p {
-    margin-top: 0%;
-    margin-bottom: 1%;
+    margin-top: 30px;
 }
 
 a {
@@ -75,22 +74,13 @@ a {
 }
 
 @media only screen and (max-width: 700px) {
-    #title {
-      span {
-        font-size: 5vw;
-      }
-
-      p {
-        font-size: 3.5vw;
-      }
-    }
-
-    li {
-        font-size: 3.5vw;
-    }
-
     #job-info {
         border-top: 1px var(--text) solid;
+        padding-top: 20px;
+    }
+
+    .sub-item {
+        padding-top: 20px;
     }
 
     #job-content {
@@ -107,7 +97,8 @@ a {
         margin-bottom: 0%;
     }
 
-    #job-info {
-        padding-top: 7%;
+    #job-desc {
+        padding-bottom: 10px;
+        margin-top: 10px;
     }
   }

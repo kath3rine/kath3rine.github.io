@@ -1,23 +1,10 @@
 import '../styles/Home.css';
 import '../styles/Global.css';
-import Contact from '../components/Contact.js'
-import Katherine from '../images/katherine.png';
-import Bunny from '../components/Scene.js'
+import Contact from '../components/Contact.tsx'
+import Scene from '../components/Scene.js'
+import buttons from '../data/ButtonData.json'
 
 function Home() {
-
-  const buttons = [
-    {
-      "link": "#experience", 
-      "text": "experience"
-    },
-    {
-      "link": "#projects", 
-      "text": "projects"
-    }
-  
-  ]
-
   return (
     <div className="section" id="home">
         <div id="home-left">
@@ -32,21 +19,19 @@ function Home() {
             </div>
             
             <div id="buttons">
-              {buttons.map((button) => (
+              {buttons.map((button : {link : string, text: string}) => (
                 <div id="button">
                   <a href={button.link}> {'>> cd ~/'}{button.text}</a>
                 </div>
               ))}
             </div>
             <Contact />
-            
-            
           </div>
         </div>
 
         <div id="home-right">
             <div id="bunny">
-              <Bunny/>
+              <Scene model="/stuffed-animal.glb"/>
               <p>scroll or click + drag to move me!</p>
             </div>
         </div>

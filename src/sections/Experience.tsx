@@ -1,10 +1,18 @@
 import '../styles/Experience.css';
 import React, { useState } from 'react';
-import experiences from '../components/ExperienceData.json'
-function Experience() {
-    const [item, setItem] = useState(0);
+import experiences from '../data/ExperienceData.json'
 
-    const handleChange = (newIndex) => {
+interface ExperienceType {
+    company: string;
+    role: string;
+    desc: string[];
+    date: string;
+}
+
+function Experience() {
+    const [item, setItem] = useState<number>(0);
+
+    const handleChange = (newIndex : number) => {
         setItem(newIndex);
     }  
 
@@ -14,7 +22,7 @@ function Experience() {
                 <div className="section-content" id="job-content">
 
                     <div className="job-component" id="job-sidebar">
-                        {experiences.map((group, index) => (
+                        {experiences.map((group : ExperienceType[], index : number) => (
                             <div id="sidebar-company"
                             key={index}
                             onClick={() => handleChange(index)}>
@@ -26,7 +34,7 @@ function Experience() {
                     </div>
 
                     <div className="job-component" id="job-info">
-                        {experiences[item].map((x, i) => (
+                        {experiences[item].map((x : ExperienceType, i) => (
                             <div className={`${i === experiences[item].length - 1 ? 'sub-item' : 'sub-item-border'}`} id="sub-item"> 
                                 <div id='title'>
                                     <span id="role">{x.role} </span> <span id="company"> @ {x.company}</span>
@@ -34,7 +42,7 @@ function Experience() {
                                 </div>
 
                                 <div id="job-desc">
-                                    {x.desc.map((d) => (
+                                    {x.desc.map((d : string) => (
                                         <li id="job-desc-item">{d}</li>
                                     ))}
                                 </div>
