@@ -10,12 +10,12 @@ function Home() {
         <div id="home-left">
           <div id="home-header">
             <p>Hi, I'm </p>
-            <h1>Katherine</h1>
+            <h1>Katherine,</h1>
           </div>
 
           <div id="home-content">
             <div id="intro">
-              <p> I'm a software engineer at GEICO and recent graduate of the University of Maryland, where I earned a B.S. in Computer Science and a B.S. in Immersive Media Design: Computing.</p>
+              <p> a software engineer at GEICO with a B.S. in Computer Science and a B.S. in Immersive Media Design: Computing from the University of Maryland.</p>
             </div>
             
             <div id="buttons">

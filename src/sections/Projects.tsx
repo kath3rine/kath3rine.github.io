@@ -7,6 +7,8 @@ interface CardType {
   title: string;
   category: string;
   demo?: string;
+  link?: string;
+  more?: string;
   tech: string[];
   desc: string[];
 }
@@ -27,7 +29,7 @@ function Card({card} : CardProps) {
         <div className="card-front">
           <img id="proj-img" src={card.img}/>
           <h2>{card.title}</h2>
-          <p id="category">{card.category} {card.demo ? <a href={card.demo}> (demo)</a> : ""} {card.more ? <a href={card.more}> (more)</a> : ""} </p>
+          <p id="category">{card.category} {card.demo ? <a href={card.demo}> (demo)</a> : ""} {card.more ? <a href={card.more}> (more)</a> : ""} {card.link ? <a href={card.link}> (link)</a> : ""} </p>
   
           <div id="tech">
             {card.tech.map((x : string) => (

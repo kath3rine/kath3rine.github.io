@@ -52,7 +52,7 @@
   label {
     border-radius: 4px;
     margin: 3px;
-    padding: 3px 10px 3px 10px;
+    padding: 3px 5px 3px 5px;
     font-family: "Outfit", sans-serif;
     border: 1px var(--text) solid;
     color: var(--text);
@@ -99,6 +99,10 @@
       transform: rotateY(180deg);
       font-family: "Outfit", sans-serif;
       font-weight: 400;
+
+      li {
+        margin: 10px 30px 0px 30px;
+      }
     }
     
     .flipped .card-front {
